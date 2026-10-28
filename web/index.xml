@@ -140,6 +140,16 @@
     <category>Mathematics/Geometry</category>
 </item>
 <item>
+  <title>Foundations and Limits of Essentially Ordered Causal Regress Arguments</title>
+  <link>https://isa-afp.org/entries/Thomistic_Causal_Arguments.html</link>
+  <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+  <description>Foundations and Limits of Essentially Ordered Causal Regress Arguments in the AFP</description>
+    <category>Logic/Philosophical aspects</category>
+    <category>Logic/General logic/Mechanization of proofs</category>
+    <category>Mathematics/Graph theory</category>
+    <category>Mathematics/Order</category>
+</item>
+<item>
   <title>A deep embedding of HOL in HOL: soundness, completeness, consistency</title>
   <link>https://isa-afp.org/entries/HOL_in_HOL_Deep.html</link>
   <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>

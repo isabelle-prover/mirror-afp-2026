@@ -436,6 +436,52 @@
   "year": "2026"
  },
  {
+  "abstract": "This entry formalizes a carrier-restricted theory of causal and grounding regress arguments in Isabelle/HOL. It distinguishes acyclicity, well-foundedness, explicit chain termination, local foundation, global foundation, and full grounding, and proves the valid implications together with finite and infinite separation models. An executable finite checker returns either an exact independent-root certificate or a concrete missing-foundation witness. A bounded cycle analyzer produces explicit finite return-path certificates, and a certified finite profile links five declarative properties to two executable tests. The entry also formalizes Cohoe-style and Romero-Pérez-style Second-Way reconstructions with explicit translation assumptions and premise-deletion countermodels. All conclusions are conditional on stated dependency premises; no formal first cause is identified with God, and the First and Third Ways are deliberately outside scope.",
+  "authors": [
+   "Arthur Freitas Ramos",
+   "David Barros Hulak",
+   "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "date": "2026-08-07",
+  "link": "../entries/Thomistic_Causal_Arguments.html",
+  "permalink": "https://isa-afp.org/entries/Thomistic_Causal_Arguments.html",
+  "related": [
+   {
+    "doi": "10.1080/09608788.2013.816934"
+   },
+   {
+    "doi": "10.1007/s11153-012-9337-6"
+   },
+   {
+    "doi": "10.1111/meta.12072"
+   },
+   {
+    "doi": "10.1007/s10992-015-9376-4"
+   },
+   {
+    "doi": "10.1093/mind/fzv112"
+   },
+   {
+    "doi": "10.1007/s11406-022-00593-x"
+   }
+  ],
+  "shortname": "Thomistic_Causal_Arguments",
+  "title": "Foundations and Limits of Essentially Ordered Causal Regress Arguments",
+  "topic_links": [
+   "../topics/logic/philosophical-aspects/",
+   "../topics/logic/general-logic/mechanization-of-proofs/",
+   "../topics/mathematics/graph-theory/",
+   "../topics/mathematics/order/"
+  ],
+  "topics": [
+   "Logic/Philosophical aspects",
+   "Logic/General logic/Mechanization of proofs",
+   "Mathematics/Graph theory",
+   "Mathematics/Order"
+  ],
+  "year": "2026"
+ },
+ {
   "abstract": "This entry presents a machine-checked deep embedding of classical higher-order logic (HOL) in Isabelle/HOL, following the article Higher-Order Semantics and Extensionality by Benzmüller, Brown and Kohlhase (Journal of Symbolic Logic 69(4), 2004; henceforth BKK). Throughout, HOL means Church's simple theory of types: it is the embedded object logic, while Isabelle/HOL serves as the ambient meta-logic. The language of BKK §2 is formalised in a locally nameless representation, which makes BKK's identification of α-equivalent terms a literal equality, so that no α-conversion or bound-variable renaming is needed. The semantics of BKK §3 is rendered abstractly, up to the class Mβfb of Σ-Henkin models; standard models arise as the full special case. The signature includes BKK's optional primitive equality (Remark 7.9) and — following Andrews' General Models, Descriptions, and Choice in Type Theory (1972), beyond BKK — typed description operators.\nOn this basis the natural-deduction calculus NK of BKK §7 is proved sound (Theorem 7.3) and Henkin-complete, via the model-existence method of BKK §6, with the term model realised as a term evaluation. Completeness holds in a form stronger than BKK's Corollary 7.7: at every infinite value carrier, for every signature with infinitely many parameters, and for open formulas. It also holds relative to hypotheses. For derivability from hypotheses in Andrews' sense — some finite part of the hypothesis set (the context) derives the conclusion — any context of open formulas is admitted, over any infinite signature, once the carrier is at least as large as the signature; semantic compactness of the Henkin consequence follows. For the calculus itself, a finite context needs nothing beyond well-formedness, and over a countable signature a context of open formulas that leaves infinitely many parameters unused is admitted at every infinite carrier. Consistency — that ⊥ is not derivable — follows from a concrete Σ-standard model with finite domains: a single individual and finitely many non-logical constants suffice, so no axiom of infinity is assumed for the embedded logic. Model existence is likewise concrete: from the consistency of a sentence over a countable signature, a Henkin (general) model of it with countable total domain is defined in plain HOL — non-effectively, via a maximal-consistent extension, but with consistency as the only premise.\nAs an illustration, Cantor's theorem is derived inside NK, in surjective and injective form and at every type. Finally, two syntactic renderings of infinity are compared with each other and with semantic infinitude. The constant-free first-order sentences \"there are at least n individuals\" — the axiomatisation of \"the domain is infinite\" in the language of equality — are consistent with NK, by compactness over arbitrarily large finite models: the consistency proof constructs no infinite model. The single Dedekind-style axiom of infinity derives each of these sentences, but they do not derive the axiom: no finite part of them does, and a Henkin model of them all, countable over a countable signature, refutes it. To the best of our knowledge, this is the first machine-checked completeness proof for a deep embedding of HOL over plain HOL. This contribution is part of the LogiKEy project.\n",
   "authors": [
    "Christoph Benzmüller",
