@@ -4,6 +4,13 @@
     <title>Computer science/Algorithms/Optimization</title>
     <link>https://isa-afp.org/topics/computer-science/algorithms/optimization/</link>
     <description>AFP entries in Optimization</description><item>
+  <title>Travelling Salesman via dynamic programming</title>
+  <link>https://isa-afp.org/entries/TSP_Dyn_Prog.html</link>
+  <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+  <description>Travelling Salesman via dynamic programming in the AFP</description>
+    <category>Computer science/Algorithms/Optimization</category>
+</item>
+<item>
   <title>First-Order Methods for Smooth Convex Optimization in Isabelle/HOL</title>
   <link>https://isa-afp.org/entries/Projected_Gradient_Descent.html</link>
   <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>

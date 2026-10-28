@@ -922,6 +922,15 @@ host = [
   "com",
 ]
 
+[bortin.emails.bortin_email2]
+user = [
+  "mb",
+]
+host = [
+  "quantifier",
+  "cloud",
+]
+
 [bortin.homepages]
 
 [bottesch]

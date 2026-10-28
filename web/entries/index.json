@@ -49,6 +49,32 @@
   "year": "2026"
  },
  {
+  "abstract": "Travelling Salesman Problem (TSP) is well-known to be NP-hard. The computational solution, derived in this theory, follows the Bellman-Held-Karp approach utilising the power set of locations to be visited by the salesman.",
+  "authors": [
+   "Maksym Bortin"
+  ],
+  "date": "2026-09-24",
+  "link": "../entries/TSP_Dyn_Prog.html",
+  "permalink": "https://isa-afp.org/entries/TSP_Dyn_Prog.html",
+  "related": [
+   {
+    "doi": "10.1145/321105.321111"
+   },
+   {
+    "doi": "10.1145/800029.808532"
+   }
+  ],
+  "shortname": "TSP_Dyn_Prog",
+  "title": "Travelling Salesman via dynamic programming",
+  "topic_links": [
+   "../topics/computer-science/algorithms/optimization/"
+  ],
+  "topics": [
+   "Computer science/Algorithms/Optimization"
+  ],
+  "year": "2026"
+ },
+ {
   "abstract": "This entry formalises the complexity analysis of set operations on strongly joinable trees as defined by Blelloch, Ferizovic and Sun. It is proved that union, intersection, and difference run in time $O(m \\log(n/m + 1))$ for input sets of size $m$ and $n$ where $m \\le n$.",
   "authors": [
    "Marco Haucke"

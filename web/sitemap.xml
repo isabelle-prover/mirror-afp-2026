@@ -14,6 +14,9 @@
     <loc>https://isa-afp.org/entries/Steiner_Line_Theorem.html</loc>
     <lastmod>2026-10-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://isa-afp.org/entries/TSP_Dyn_Prog.html</loc>
+    <lastmod>2026-09-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://isa-afp.org/entries/Joinable_BST_Work_Bounds.html</loc>
     <lastmod>2026-09-24T00:00:00+00:00</lastmod>
   </url><url>
@@ -25792,6 +25795,8 @@
     <loc>https://isa-afp.org/thys/TsirelsonBound/Tensor_Mat_Compl_Properties.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/TsirelsonBound/Tsirelson.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TSP_Dyn_Prog/TSP_Dyn_Prog.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/Turans_Graph_Theorem/Turan.html</loc>
   </url><url>

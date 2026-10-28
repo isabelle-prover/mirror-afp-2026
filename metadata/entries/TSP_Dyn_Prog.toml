@@ -1,0 +1,34 @@
+title = "Travelling Salesman via dynamic programming"
+date = 2026-09-24
+topics = [
+  "Computer science/Algorithms/Optimization",
+]
+abstract = """
+<i>Travelling Salesman Problem</i> (TSP) is well-known to be NP-hard.
+The computational solution, derived in this theory,
+follows the Bellman-Held-Karp approach 
+utilising the power set of locations to be visited by the salesman."""
+license = "lgpl"
+note = ""
+creation_note = ""
+
+[authors]
+
+[authors.bortin]
+email = "bortin_email2"
+
+[contributors]
+
+[notify]
+bortin = "bortin_email2"
+
+[history]
+
+[extra]
+
+[related]
+dois = [
+  "10.1145/321105.321111",
+  "10.1145/800029.808532",
+]
+pubs = []
