@@ -1,0 +1,9 @@
+chapter AFP
+
+session TSP_Dyn_Prog = HOL +
+  options [document = pdf, timeout = 300]
+  theories
+    TSP_Dyn_Prog
+  document_files
+    "root.bib"
+    "root.tex"
