@@ -1,0 +1,97 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{isabelle,isabellesym}
+\usepackage{amsfonts,amsmath,amssymb}
+
+% this should be the last package used
+\usepackage{pdfsetup}
+
+% urls in roman style, theory text in math-similar italics
+\urlstyle{rm}
+\isabellestyle{it}
+
+\begin{document}
+
+\title{The Irrationality of $\zeta(5)$}
+\author{Alex Hyman}
+\maketitle
+
+\begin{abstract}\sloppy
+We formalise the proof that $\zeta(5)$ is irrational from A.~Fauzan's 2026 preprint~\cite{fauzan},
+following the Lean~4/Mathlib formalisation by domino14~\cite{lean}, of which this entry is a
+port.  The argument builds integer polynomials
+$Q_n$ with $0 < Q_n(\zeta(5)) < e^{-cn^2}$ as Hankel determinants of a rational functional: a
+positive moment representation of $\zeta(5)$ gives positivity, $p$-adic estimates through
+unimodular bases in two prime ranges and a uniform asymptotic for the valuations give the
+integrality factor, and a logarithmic-energy estimate for an explicit measure gives the
+archimedean bound, proving irrationality.  The main theorem is \isa{zeta 5 $\notin$ $\mathbb{Q}$}
+for the \isa{zeta} of the entry Zeta\_\allowbreak Function; the only oracle is \isa{holds}, from the 72 numeric
+inequalities discharged by \isa{approximation}.  The port is not literal: Lean's dependently typed
+\isa{Fin\ n} matrices and $\Sigma$-indexed bases become Jordan\_\allowbreak Normal\_\allowbreak Form
+matrices over explicit index lists, and the $p$-adic field $\mathbb{Q}_p$ is replaced by truncated
+rational series with congruences modulo powers of $p$, so that the whole development lives in HOL
+over $\mathbb{Q}$ without Types-To-Sets; Lean's kernel computation on 1052 dyadic intervals becomes
+\isa{approximation} with splitting.
+
+Thirteen theories are independent of the proof and reusable: a calculus for lower bounds on
+$p$-adic valuations of rationals and polynomials with a mod-$p$ unimodularity criterion
+(\isa{unimodular\_\allowbreak criterion}), the Vandermonde determinant for Jordan\_\allowbreak Normal\_\allowbreak Form matrices
+(\isa{det\_\allowbreak vandermonde\_\allowbreak jnf}) and positivity of Gram determinants, Riemann-sum limits
+(\isa{outer\_\allowbreak prime\_\allowbreak sum\_\allowbreak bound}) of sums over primes from the prime number theorem, the
+log-sine integral and the circle average of $\ln|z-a|$ (\isa{ln\_\allowbreak sin\_\allowbreak integral},
+\isa{circle\_\allowbreak avg\_\allowbreak log}), the arcsine law
+and its potential (\isa{arcsine\_\allowbreak potential}), Andr\'eief's identity for $\sigma$-finite measures
+(\isa{andreief}), and the zero-mass logarithmic energy inequality on $\mathbb{C}$
+(\isa{log\_\allowbreak energy\_\allowbreak zero\_\allowbreak mass\_\allowbreak nonpos}).
+
+The port was an experiment in AI proof engineering: an orchestration model (Claude Fable 5.1)
+wrote Isar skeletons with fact hints, proof agents (Claude Opus 5.5) closed about 1,100 leaves
+interactively in Isabelle/jEdit, and automated scripts harvested \isa{try0} and
+\isa{sledgehammer} results to reduce context load on the agents.  The problem was chosen because
+its final statement is short and is expressed with existing AFP definitions, so the result is
+easy to audit.  The formalisation effort spanned 3 days of continuous work with a fair amount of
+human intervention to keep Fable and the agents on track, give them Isabelle-related hints,
+insist on legible proofs, and oversee the structure of the project.  The author has audited the
+files and takes full responsibility for their contents.
+\end{abstract}
+
+
+
+
+\section*{Relation to the Lean formalisation}
+
+The definitions, statements and proof structure follow the Lean project theory by theory (each
+Isabelle theory names its Lean counterparts).  The main departures:
+\begin{itemize}\sloppy
+\item The $p$-adic field $\mathbb{Q}_p$ of the paper's Sections 3.1--3.2 is not constructed.
+  Every $p$-adically convergent series is replaced by its length-$M$ partial sum (the \isa{\_\allowbreak tr}
+  definitions) and the identities become congruences modulo powers of $p$, so the development
+  stays in HOL over $\mathbb{Q}$ without Types-To-Sets (theories Zeta5\_\allowbreak Truncated\_\allowbreak Expansions,
+  Zeta5\_\allowbreak Pole\_\allowbreak Distribution).
+\item Lean's \isa{Fin n} matrices and $\Sigma$-indexed bases become Jordan\_\allowbreak Normal\_\allowbreak Form matrices
+  with explicit index lists (\isa{inner\_\allowbreak idx}, \isa{outer\_\allowbreak idx}); dependent types were never
+  needed, only bookkeeping.
+\item Lean checks the potential inequality (A.9) by kernel computation on 1052 dyadic intervals;
+  here it is 52 region lemmas by \isa{approximation} with splitting, and the 16 energy enclosures
+  (A.10) are per-term \isa{approximation} runs after rescaling the logarithms into $[1,2)$.
+\item Mathlib facts with no HOL/AFP counterpart were proved from scratch and are the general
+  theories listed in the abstract; the moment representation (Proposition 2.2) is derived from
+  the Laplace transform of $\sin$ and the cotangent partial-fraction formula of the AFP rather
+  than from a Hurwitz-zeta integral, the prime number theorem is the AFP's
+  (\isa{\isasymtheta\_\allowbreak asymptotics}), the von Staudt--Clausen facts come from the entry Bernoulli, and the rational
+  valuations from Kummer\_\allowbreak Congruence.
+\item The zero-mass energy inequality (Lemma 6.2) is stated with explicit hypotheses (a finite
+  dominating measure with $\ln|z-w|$ integrable on the product and a null diagonal), which is
+  what the paper's ``finite energy, compact support'' has to mean for signed measures.
+\end{itemize}
+
+\tableofcontents
+\newpage
+\parindent 0pt\parskip 0.5ex
+
+\input{session}
+
+\bibliographystyle{abbrv}
+\bibliography{root}
+
+\end{document}

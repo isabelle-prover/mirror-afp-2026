@@ -1,0 +1,53 @@
+chapter AFP
+
+session Zeta_5_Irrational = Prime_Number_Theorem +
+  description "Formalisation of the proof that zeta(5) is irrational (A. Fauzan, 2026),
+    following the Lean 4 formalisation domino14/zeta5."
+  options [timeout = 3600]
+  sessions
+    "HOL-Decision_Procs"
+    "HOL-Complex_Analysis"
+    "HOL-Real_Asymp"
+    "HOL-Computational_Algebra"
+    "HOL-Library"
+    Zeta_Function
+    Kummer_Congruence
+    Jordan_Normal_Form
+    Cotangent_PFD_Formula
+    Liouville_Numbers
+    BenOr_Kozen_Reif
+  theories
+    Rational_Padic_Valuations
+    Vandermonde_Gram_Determinants
+    Polynomial_Taylor_Shift
+    Unimodular_Determinants
+    Legendre_Factorial_Valuation
+    Prime_Sum_Limits
+    Piecewise_Interval_Integrals
+    Laplace_Sin_Cot_Series
+    Interval_Integral_Substitutions
+    Log_Sine_Integral
+    Arcsine_Distribution
+    Logarithmic_Energy
+    Andreief_Identity
+    Zeta5_Definitions
+    Zeta5_Functionals
+    Zeta5_IntValued
+    Zeta5_Far_Poles
+    Zeta5_Small_Primes
+    Zeta5_Truncated_Expansions
+    Zeta5_Pole_Distribution
+    Zeta5_Inner_Range
+    Zeta5_Outer_Range
+    Zeta5_Integral_Representation
+    Zeta5_Exact_Constants
+    Zeta5_Uniform_Asymptotics
+    Zeta5_Explicit_Integrals
+    Zeta5_Asymptotics
+    Zeta5_Equilibrium_Measure
+    Zeta5_Numeric_Enclosures
+    Zeta5_Archimedean_Bound
+    Zeta_5_Irrational
+  document_files
+    "root.tex"
+    "root.bib"
