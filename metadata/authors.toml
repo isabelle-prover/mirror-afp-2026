@@ -3586,6 +3586,23 @@ host = [
 [hupel.homepages]
 hupel_homepage = "https://lars.hupel.info/"
 
+[hyman]
+name = "Alex Raymond Hyman"
+orcid = "0009-0000-2270-885X"
+
+[hyman.emails]
+
+[hyman.emails.hyman_email]
+user = [
+  "hymanimy",
+]
+host = [
+  "gmail",
+  "com",
+]
+
+[hyman.homepages]
+
 [ijbema]
 name = "Mark Ijbema"
 

@@ -4,6 +4,13 @@
     <title>Archive of Formal Proofs</title>
     <link>https://isa-afp.org/</link>
     <description>Formal developments in the AFP</description><item>
+  <title>The Irrationality of ζ(5)</title>
+  <link>https://isa-afp.org/entries/Zeta_5_Irrational.html</link>
+  <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
+  <description>The Irrationality of ζ(5) in the AFP</description>
+    <category>Mathematics/Analysis</category>
+</item>
+<item>
   <title>Rely-Guarantee Specification of a Concurrent Garbage Collector</title>
   <link>https://isa-afp.org/entries/RG_VDM_Garbage_Collector.html</link>
   <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>

@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://isa-afp.org/entries/index.json</loc>
-    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://isa-afp.org/</loc>
-    <lastmod>2026-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://isa-afp.org/entries/Zeta_5_Irrational.html</loc>
+    <lastmod>2026-10-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://isa-afp.org/entries/RG_VDM_Garbage_Collector.html</loc>
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
@@ -3448,6 +3451,8 @@
     <loc>https://isa-afp.org/authors/londono/</loc>
   </url><url>
     <loc>https://isa-afp.org/authors/coglio/</loc>
+  </url><url>
+    <loc>https://isa-afp.org/authors/hyman/</loc>
   </url><url>
     <loc>https://isa-afp.org/authors/bentkamp/</loc>
   </url><url>
@@ -27187,6 +27192,68 @@
     <loc>https://isa-afp.org/thys/Zeckendorf/Zeckendorf.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/Zeta_3_Irrational/Zeta_3_Irrational.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Andreief_Identity.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Arcsine_Distribution.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Interval_Integral_Substitutions.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Laplace_Sin_Cot_Series.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Legendre_Factorial_Valuation.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Log_Sine_Integral.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Logarithmic_Energy.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Piecewise_Interval_Integrals.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Polynomial_Taylor_Shift.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Prime_Sum_Limits.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Rational_Padic_Valuations.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Unimodular_Determinants.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Vandermonde_Gram_Determinants.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta_5_Irrational.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_Archimedean_Bound.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_Asymptotics.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_Definitions.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_Equilibrium_Measure.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_Exact_Constants.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_Explicit_Integrals.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_Far_Poles.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_Functionals.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_Inner_Range.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_Integral_Representation.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_IntValued.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_Numeric_Enclosures.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_Outer_Range.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_Pole_Distribution.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_Small_Primes.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_Truncated_Expansions.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Zeta_5_Irrational/Zeta5_Uniform_Asymptotics.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/Zeta_Function/Hadjicostas_Chapman.html</loc>
   </url><url>

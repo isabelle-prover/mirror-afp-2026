@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Irrationality of ζ(5) - Archive of Formal Proofs</title>
+    <meta name="description" content="The Irrationality of ζ(5) in the Archive of Formal Proofs">
+    <meta property="og:description" content="The Irrationality of ζ(5) in the Archive of Formal Proofs">
+    <meta property="og:title" content="The Irrationality of ζ(5)">
+    <meta property="og:url" content="https://isa-afp.org/entries/Zeta_5_Irrational.html">
+    <meta property="og:image" content="https://isa-afp.org/images/afp.png">
+    <meta property="og:type" content="article">
+  <link rel="stylesheet" type="text/css" href="../css/front.min.css">
+  <link rel="icon" href="../images/favicon.ico" type="image/icon">
+    
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [["$", "$"], ["\\(", "\\)"]]
+        },
+        processEscapes: true,
+        svg: {
+          fontCache: "global"
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="../js/mathjax/es5/tex-mml-chtml.js">
+    </script>
+
+  <script src="../js/library.js"></script>
+  <script src="../js/flexsearch.bundle.js"></script>
+  <script src="../js/search-autocomplete.js"></script>
+    <script src="../js/obfuscate.js"></script>
+    <script src="../js/entries.js"></script>
+</head>
+
+  <body class="mathjax_ignore">
+    <aside><div id="menu-toggle">
+  <input id="toggle" type="checkbox">
+  <label for="toggle">
+    <span>menu</span>
+    <img src="../images/menu.svg" alt="Menu">
+  </label>
+  <a href="../" class="logo-link">
+    <img src="../images/afp.png" alt="Logo of the Archive of Formal Proofs" class="logo">
+  </a>
+  <nav id="menu">
+    <div>
+      <a href="../" class="logo-link">
+        <img src="../images/afp.png" alt="Logo of the Archive of Formal Proofs" class="logo">
+      </a>
+      <ul>
+          <li >
+            <a href="../">Home</a>
+          </li>
+          <li >
+            <a href="../topics/">Topics</a>
+          </li>
+          <li >
+            <a href="../download/">Download</a>
+          </li>
+          <li >
+            <a href="../help/">Help</a>
+          </li>
+          <li >
+            <a href="../submission/">Submission</a>
+          </li>
+          <li >
+            <a href="../statistics/">Statistics</a>
+          </li>
+          <li >
+            <a href="../about/">About</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+    </aside>
+
+    <div class="content entries"><header>
+    <form autocomplete="off" action="../search/">
+      <div class="form-container">
+        <input id="search-input" name="s" type="search" size="31" maxlength="255" value=""
+               aria-label="Search the AFP" list="autocomplete"><button id="search-button" type="submit">
+          <img src="../images/search.svg" alt="Search">
+        </button>
+        <datalist id="autocomplete"></datalist>
+      </div>
+    </form>
+  <h1>
+    <span class='first'>T</span>he <span class='first'>I</span>rrationality of ζ(5)
+  </h1>
+  <div>
+      <p><a href="../authors/hyman/">Alex Raymond Hyman</a> <a class="obfuscated" data="eyJ1c2VyIjpbImh5bWFuaW15Il0sImhvc3QiOlsiZ21haWwiLCJjb20iXX0=">📧</a>
+      </p>
+      <p class="date">October 26, 2026</p>
+  </div>
+</header>
+      <div>
+  <main>
+
+    <h3>Abstract</h3>
+    <div class="abstract mathjax_process"><p>We formalise the proof that $\zeta(5)$ is irrational from A. Fauzan's 2026 preprint (Zenodo, doi:10.5281/zenodo.22826419), following the Lean 4/Mathlib formalisation of the same argument by domino14 (<a href="https://github.com/domino14/zeta5">github.com/domino14/zeta5</a>), of which this entry is a port. The argument builds integer polynomials $Q_n$ with $0 &lt; Q_n(\zeta(5)) &lt; e^{-cn^2}$ as Hankel determinants of a rational functional: a positive moment representation of $\zeta(5)$ gives positivity, $p$-adic estimates through unimodular bases in two prime ranges and a uniform asymptotic for the valuations give the integrality factor, and a logarithmic-energy estimate for an explicit measure gives the archimedean bound, proving irrationality. The main theorem is <code>zeta 5 ∉ ℚ</code> for the <code>zeta</code> of the AFP entry Zeta_Function; the only oracle is <code>holds</code>, from the 72 numeric inequalities discharged by <code>approximation</code>. The port is not exact, as Lean's dependently typed Fin n matrices and $\Sigma$-indexed bases become Jordan_Normal_Form matrices over explicit index lists, and the $p$-adic field $\mathbb{Q}_p$ is replaced by truncated rational series with congruences modulo powers of $p$, so that the whole development lives in HOL over $\mathbb{Q}$ without Types-To-Sets; Lean's kernel computation on 1052 dyadic intervals becomes approximation with splitting.</p>
+
+<p>Thirteen theories are independent of the proof and reusable: a calculus for lower bounds on $p$-adic valuations of rationals and polynomials with a mod-$p$ unimodularity criterion (<code>unimodular_criterion</code>), the Vandermonde determinant for Jordan_Normal_Form matrices (<code>det_vandermonde_jnf</code>) and positivity of Gram determinants, Riemann-sum limits (<code>outer_prime_sum_bound</code>) of sums over primes from the prime number theorem, the log-sine integral and the circle average of $\ln|z-a|$ (<code>ln_sin_integral</code>, <code>circle_avg_log</code>), the arcsine law and its potential (<code>arcsine_potential</code>), Andr&eacute;ief's identity for $\sigma$-finite measures (<code>andreief</code>), and the zero-mass logarithmic energy inequality on $\mathbb{C}$ (<code>log_energy_zero_mass_nonpos</code>).</p></div>
+
+    <h3>License</h3>
+    <div>
+        <a href="https://isa-afp.org/LICENSE">BSD License</a>
+    </div>
+      <h3>Note</h3>
+      <p><em>The port was an experiment in AI proof engineering: an orchestration model (Claude Fable 5.1) wrote Isar skeletons with fact hints, proof agents (Claude Opus 5.5) closed about 1,100 leaves interactively in Isabelle/jEdit using the I/Q plugin, and automated scripts harvested try0/sledgehammer results to reduce context load on the agents. The problem was chosen because its final statement is short and is expressed with existing AFP definitions, so the result is easy to audit. The formalisation effort spanned 3 days of continuous work with a fair amount of human intervention to keep Fable and the agents on track, give them Isabelle-related hints, insist on legible proofs and syntax, and oversee the structure of the project. The author has audited the files and takes full responsibility for their contents.</em></p>
+      <h3>Topics</h3>
+      <ul>
+          <li><a href="../topics/mathematics/analysis/">Mathematics/Analysis</a></li>
+      </ul>
+      <h3>Related publications</h3>
+      <ul>
+        <li>Fauzan, A. (2026). <i>ζ(5) is irrational</i> (Version v1). Zenodo. https://doi.org/10.5281/ZENODO.22826418</li>
+        <li>https://github.com/domino14/zeta5</li>
+      </ul>
+      <h3>Session Zeta_5_Irrational</h3>
+      <ul>
+          <li><a href="../thys/Zeta_5_Irrational/Rational_Padic_Valuations.html">Rational_Padic_Valuations</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Vandermonde_Gram_Determinants.html">Vandermonde_Gram_Determinants</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Polynomial_Taylor_Shift.html">Polynomial_Taylor_Shift</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Unimodular_Determinants.html">Unimodular_Determinants</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Legendre_Factorial_Valuation.html">Legendre_Factorial_Valuation</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Prime_Sum_Limits.html">Prime_Sum_Limits</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Piecewise_Interval_Integrals.html">Piecewise_Interval_Integrals</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Laplace_Sin_Cot_Series.html">Laplace_Sin_Cot_Series</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Interval_Integral_Substitutions.html">Interval_Integral_Substitutions</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Log_Sine_Integral.html">Log_Sine_Integral</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Arcsine_Distribution.html">Arcsine_Distribution</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Logarithmic_Energy.html">Logarithmic_Energy</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Andreief_Identity.html">Andreief_Identity</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_Definitions.html">Zeta5_Definitions</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_Functionals.html">Zeta5_Functionals</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_IntValued.html">Zeta5_IntValued</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_Far_Poles.html">Zeta5_Far_Poles</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_Small_Primes.html">Zeta5_Small_Primes</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_Truncated_Expansions.html">Zeta5_Truncated_Expansions</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_Pole_Distribution.html">Zeta5_Pole_Distribution</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_Inner_Range.html">Zeta5_Inner_Range</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_Outer_Range.html">Zeta5_Outer_Range</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_Integral_Representation.html">Zeta5_Integral_Representation</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_Exact_Constants.html">Zeta5_Exact_Constants</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_Uniform_Asymptotics.html">Zeta5_Uniform_Asymptotics</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_Explicit_Integrals.html">Zeta5_Explicit_Integrals</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_Asymptotics.html">Zeta5_Asymptotics</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_Equilibrium_Measure.html">Zeta5_Equilibrium_Measure</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_Numeric_Enclosures.html">Zeta5_Numeric_Enclosures</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta5_Archimedean_Bound.html">Zeta5_Archimedean_Bound</a></li>
+          <li><a href="../thys/Zeta_5_Irrational/Zeta_5_Irrational.html">Zeta_5_Irrational</a></li>
+      </ul>
+
+    <div class="flex-wrap">
+        <div>
+          <h3>Depends on</h3>
+          <ul class="horizontal-list">
+              <li><a href="../entries/BenOr_Kozen_Reif.html">The BKR Decision Procedure for Univariate Real Arithmetic</a></li>
+              <li><a href="../entries/Cotangent_PFD_Formula.html">A Proof from THE BOOK: The Partial Fraction Expansion of the Cotangent</a></li>
+              <li><a href="../entries/Jordan_Normal_Form.html">Matrices, Jordan Normal Forms, and Spectral Radius Theory</a></li>
+              <li><a href="../entries/Kummer_Congruence.html">Kummer's congruence</a></li>
+              <li><a href="../entries/Liouville_Numbers.html">Liouville numbers</a></li>
+              <li><a href="../entries/Prime_Number_Theorem.html">The Prime Number Theorem</a></li>
+              <li><a href="../entries/Zeta_Function.html">The Hurwitz and Riemann ζ Functions</a></li>
+          </ul>
+        </div>
+    </div>
+  </main>
+
+  <nav class="links">
+    <a class="popup-button" href="#cite-popup">Cite</a>
+    <a class="popup-button" href="#download-popup">Download</a>
+    <h4>PDFs</h4>
+    <a href="https://isa-afp.org/browser_info/current/AFP/Zeta_5_Irrational/outline.pdf">Proof outline</a>
+    <a href="https://isa-afp.org/browser_info/current/AFP/Zeta_5_Irrational/document.pdf">Proof document</a>
+    <a href="https://isa-afp.org/browser_info/current/AFP/Zeta_5_Irrational/session_graph.pdf">Dependencies</a>
+  </nav>
+
+  <div id="cite-popup" class="overlay">
+    <a class="cancel" href="#"></a>
+    <div class="popup">
+      <h2>Cite</h2>
+      <a class="close" href="#">&times;</a>
+      <div>
+        <p style="display:none;" id="bibtex-filename">Zeta_5_Irrational-AFP</p>
+        <pre id="copy-text">@article{Zeta_5_Irrational-AFP,
+  author  = {Alex Raymond Hyman},
+  title   = {The Irrationality of ζ(5)},
+  journal = {Archive of Formal Proofs},
+  month   = {October},
+  year    = {2026},
+  note    = {\url{https://isa-afp.org/entries/Zeta_5_Irrational.html},
+             Formal proof development},
+  ISSN    = {2150-914x},
+}</pre>
+        <button id="copy-bibtex">Copy</button> <a id="download-bibtex">Download</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="download-popup" class="overlay">
+    <a class="cancel" href="#"></a>
+    <div class="popup">
+      <h2>Download</h2>
+      <a class="close" href="#">&times;</a>
+      <a href="https://isa-afp.org/release/afp-Zeta_5_Irrational-current.tar.gz" download>
+        Download latest</a>
+    </div>
+  </div>
+      </div>
+    </div>
+  </body>
+</html>

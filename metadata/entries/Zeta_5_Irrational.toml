@@ -1,0 +1,34 @@
+title = "The Irrationality of ζ(5)"
+date = 2026-10-26
+topics = [
+  "Mathematics/Analysis",
+]
+abstract = """
+<p>We formalise the proof that $\\zeta(5)$ is irrational from A. Fauzan's 2026 preprint (Zenodo, doi:10.5281/zenodo.22826419), following the Lean 4/Mathlib formalisation of the same argument by domino14 (<a href=\"https://github.com/domino14/zeta5\">github.com/domino14/zeta5</a>), of which this entry is a port. The argument builds integer polynomials $Q_n$ with $0 &lt; Q_n(\\zeta(5)) &lt; e^{-cn^2}$ as Hankel determinants of a rational functional: a positive moment representation of $\\zeta(5)$ gives positivity, $p$-adic estimates through unimodular bases in two prime ranges and a uniform asymptotic for the valuations give the integrality factor, and a logarithmic-energy estimate for an explicit measure gives the archimedean bound, proving irrationality. The main theorem is <code>zeta 5 ∉ ℚ</code> for the <code>zeta</code> of the AFP entry Zeta_Function; the only oracle is <code>holds</code>, from the 72 numeric inequalities discharged by <code>approximation</code>. The port is not exact, as Lean's dependently typed Fin n matrices and $\\Sigma$-indexed bases become Jordan_Normal_Form matrices over explicit index lists, and the $p$-adic field $\\mathbb{Q}_p$ is replaced by truncated rational series with congruences modulo powers of $p$, so that the whole development lives in HOL over $\\mathbb{Q}$ without Types-To-Sets; Lean's kernel computation on 1052 dyadic intervals becomes approximation with splitting.</p>
+
+<p>Thirteen theories are independent of the proof and reusable: a calculus for lower bounds on $p$-adic valuations of rationals and polynomials with a mod-$p$ unimodularity criterion (<code>unimodular_criterion</code>), the Vandermonde determinant for Jordan_Normal_Form matrices (<code>det_vandermonde_jnf</code>) and positivity of Gram determinants, Riemann-sum limits (<code>outer_prime_sum_bound</code>) of sums over primes from the prime number theorem, the log-sine integral and the circle average of $\\ln|z-a|$ (<code>ln_sin_integral</code>, <code>circle_avg_log</code>), the arcsine law and its potential (<code>arcsine_potential</code>), Andr&eacute;ief's identity for $\\sigma$-finite measures (<code>andreief</code>), and the zero-mass logarithmic energy inequality on $\\mathbb{C}$ (<code>log_energy_zero_mass_nonpos</code>).</p>"""
+license = "bsd"
+note = ""
+creation_note = "The port was an experiment in AI proof engineering: an orchestration model (Claude Fable 5.1) wrote Isar skeletons with fact hints, proof agents (Claude Opus 5.5) closed about 1,100 leaves interactively in Isabelle/jEdit using the I/Q plugin, and automated scripts harvested try0/sledgehammer results to reduce context load on the agents. The problem was chosen because its final statement is short and is expressed with existing AFP definitions, so the result is easy to audit. The formalisation effort spanned 3 days of continuous work with a fair amount of human intervention to keep Fable and the agents on track, give them Isabelle-related hints, insist on legible proofs and syntax, and oversee the structure of the project. The author has audited the files and takes full responsibility for their contents."
+
+[authors]
+
+[authors.hyman]
+email = "hyman_email"
+
+[contributors]
+
+[notify]
+hyman = "hyman_email"
+
+[history]
+
+[extra]
+
+[related]
+dois = [
+  "10.5281/zenodo.22826418",
+]
+pubs = [
+  "https://github.com/domino14/zeta5",
+]
