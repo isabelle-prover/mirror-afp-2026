@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://isa-afp.org/entries/index.json</loc>
-    <lastmod>2026-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://isa-afp.org/</loc>
-    <lastmod>2026-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://isa-afp.org/entries/Unsolvable_Quintic.html</loc>
+    <lastmod>2026-10-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://isa-afp.org/entries/Zeta_5_Irrational.html</loc>
     <lastmod>2026-10-26T00:00:00+00:00</lastmod>
@@ -13802,6 +13805,202 @@
   </url><url>
     <loc>https://isa-afp.org/thys/HOL-Library/Z2.html</loc>
   </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Abel_Ruffini.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Action_To_Sn.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Algebraic_Transitivity.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Artin.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Artin_Degree.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Characteristic.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Chinese_Remainder_Rings.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Closure_Algebraic.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Closure_Extension.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Commutator.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Complex_Field_Extension.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Composition_Factors_Solvable.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Divisibility_Theory.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Extension_Degree.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Extension_Properties.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Extension_Vector_Space.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Field_Extension.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Field_Extension_Tower.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Field_Mult_Cyclic.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Field_Of_Fractions.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Finite_Composite.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Finite_Composition_Series.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Finite_Dimensional_Isomorphism.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Finite_Dimensional_Splitting.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Finite_Extension.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Finite_Extension_Tower.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Finite_Field_Extensions.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Finite_Field_Frobenius.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Finite_Field_Galois.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Finite_Generated_Extension.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Free_Module.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Free_Module_Universal.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Galois_Action.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Galois_Automorphism.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Galois_Correspondence.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Galois_Degree.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Galois_Finite_Correspondence.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Galois_Fixed_Field.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Galois_Normality.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Galois_Restriction.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Galois_Restriction_Splitting.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Galois_Simple_Degree.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Galois_Transitivity.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/GF_p.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Group_Family_Product.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Group_Operations.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Group_Product.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Group_Theory.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Ideal_Extension.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Ideal_Lattice.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Ideal_Theory.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Indexed_Poly.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Iso_Extension.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Iso_Extension_Tower.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Jordan_Hoelder_Uniqueness.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Linear_System.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Maximal_Normal_Subgroup.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Module_Basics.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Module_Complements.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Module_Exact_Sequence.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Module_Family_Product.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Module_First_Iso.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Module_Homomorphism.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Module_Iso_Theorems.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Monoid_Iso_Classes.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/New_Algebra.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Normal_Chain.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Normal_Closure.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Normal_Series.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Order_Theory.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/P_Group.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Poly_Divisibility.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Poly_Ideal.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Poly_Ring.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Poly_Typeclass.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Prime_Subfield.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Primitive_Element.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Quotient_Module.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Radical_Extension.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Rank_Nullity.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Ring_Family_Product.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Ring_Theory.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Schreier_Refinement.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Set_Theory.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Simple_Extension.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Simple_Factor_Chain.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Sn_Composition_Factors.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Solvable_Transfer.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Steinitz.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Subfield.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Subgroup_Lattice.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Subring_Generated.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Sylow_Theorems.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Sym_Not_Solvable.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Symmetric_Generation.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Symmetric_Group.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Vector_Space.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HOL-New_Algebra/Zassenhaus_Lemma.html</loc>
+  </url><url>
     <loc>https://isa-afp.org/thys/HOL-Nominal/Nominal.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/HOL-Nonstandard_Analysis/CLim.html</loc>
@@ -26142,6 +26341,16 @@
     <loc>https://isa-afp.org/thys/Universal_Turing_Machine/UTM.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/Universal_Turing_Machine/WeakCopyTM.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Unsolvable_Quintic/Abel_Ruffini_Quintic.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Unsolvable_Quintic/Cyclotomic_Kummer.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Unsolvable_Quintic/Quintic_Example.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Unsolvable_Quintic/Radical_Normal_Closure.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Unsolvable_Quintic/Radical_Solvable.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/UpDown_Scheme/Down.html</loc>
   </url><url>

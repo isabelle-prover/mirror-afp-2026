@@ -1,5 +1,24 @@
 [
  {
+  "abstract": "This entry proves the Abel--Ruffini theorem — a polynomial equation   solvable by radicals has a solvable Galois group — and applies it to a   concrete quintic to conclude that the general quintic is not solvable by   radicals.  We follow the corresponding mathlib formalisation.    The forward direction — solvable by radicals implies solvable Galois   group — is assembled on the session New_Algebra: cyclotomic and Kummer extensions have solvable (indeed   abelian) Galois groups, solvability is preserved by the tower correspondence,   and the normal closure of a radical tower is again a radical tower obtained by   splicing the Galois conjugates of the original tower.    For the concrete witness we study the rational quintic $\\Phi = x^5 - 4x + 2$   and show that the Galois group of its splitting field over $\\mathbb{Q}$ is   not solvable.  We prove that $\\Phi$ is irreducible over $\\mathbb{Q}$   (Eisenstein's criterion at 2) and, using the AFP   entry Sturm_Sequences, show that it has exactly three   real roots and one conjugate pair of non-real roots. Complex conjugation   therefore acts on the five roots as a transposition, while irreducibility   makes the Galois action transitive; a transitive subgroup of $S_5$ containing   a transposition is the whole of $S_5$, which is not solvable.  Combining the   two halves yields the headline result that $\\Phi$ is not solvable by radicals.",
+  "authors": [
+   "Lawrence C. Paulson"
+  ],
+  "date": "2026-10-28",
+  "link": "../entries/Unsolvable_Quintic.html",
+  "permalink": "https://isa-afp.org/entries/Unsolvable_Quintic.html",
+  "related": [],
+  "shortname": "Unsolvable_Quintic",
+  "title": "The Abel-Ruffini theorem and the unsolvability of the quintic",
+  "topic_links": [
+   "../topics/mathematics/algebra/"
+  ],
+  "topics": [
+   "Mathematics/Algebra"
+  ],
+  "year": "2026"
+ },
+ {
   "abstract": "We formalise the proof that $\\zeta(5)$ is irrational from A. Fauzan's 2026 preprint (Zenodo, doi:10.5281/zenodo.22826419), following the Lean 4/Mathlib formalisation of the same argument by domino14 (github.com/domino14/zeta5), of which this entry is a port. The argument builds integer polynomials $Q_n$ with $0 \u0026lt; Q_n(\\zeta(5)) \u0026lt; e^{-cn^2}$ as Hankel determinants of a rational functional: a positive moment representation of $\\zeta(5)$ gives positivity, $p$-adic estimates through unimodular bases in two prime ranges and a uniform asymptotic for the valuations give the integrality factor, and a logarithmic-energy estimate for an explicit measure gives the archimedean bound, proving irrationality. The main theorem is zeta 5 ∉ ℚ for the zeta of the AFP entry Zeta_Function; the only oracle is holds, from the 72 numeric inequalities discharged by approximation. The port is not exact, as Lean's dependently typed Fin n matrices and $\\Sigma$-indexed bases become Jordan_Normal_Form matrices over explicit index lists, and the $p$-adic field $\\mathbb{Q}_p$ is replaced by truncated rational series with congruences modulo powers of $p$, so that the whole development lives in HOL over $\\mathbb{Q}$ without Types-To-Sets; Lean's kernel computation on 1052 dyadic intervals becomes approximation with splitting.\nThirteen theories are independent of the proof and reusable: a calculus for lower bounds on $p$-adic valuations of rationals and polynomials with a mod-$p$ unimodularity criterion (unimodular_criterion), the Vandermonde determinant for Jordan_Normal_Form matrices (det_vandermonde_jnf) and positivity of Gram determinants, Riemann-sum limits (outer_prime_sum_bound) of sums over primes from the prime number theorem, the log-sine integral and the circle average of $\\ln|z-a|$ (ln_sin_integral, circle_avg_log), the arcsine law and its potential (arcsine_potential), Andr\u0026eacute;ief's identity for $\\sigma$-finite measures (andreief), and the zero-mass logarithmic energy inequality on $\\mathbb{C}$ (log_energy_zero_mass_nonpos).\n",
   "authors": [
    "Alex Raymond Hyman"

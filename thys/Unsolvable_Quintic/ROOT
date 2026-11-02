@@ -1,0 +1,21 @@
+chapter AFP
+
+session Unsolvable_Quintic = "HOL-Analysis" +
+  options [timeout = 2400]
+  sessions
+    "HOL-New_Algebra"
+    "Sturm_Sequences"
+  (* Listed in reading order rather than as maximal theories alone: this session
+     generates a document, and the theory order here is the order of presentation.
+     Abel_Ruffini_Quintic imports all the others transitively. *)
+  theories
+    (* the forward direction: radical tower ==> solvable Galois group *)
+    Cyclotomic_Kummer
+    Radical_Solvable
+    Radical_Normal_Closure
+    (* the concrete witness, and the headline theorem *)
+    Quintic_Example
+    Abel_Ruffini_Quintic
+  document_files
+    "root.tex"
+    "root.bib"

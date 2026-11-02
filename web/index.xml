@@ -4,6 +4,13 @@
     <title>Archive of Formal Proofs</title>
     <link>https://isa-afp.org/</link>
     <description>Formal developments in the AFP</description><item>
+  <title>The Abel-Ruffini theorem and the unsolvability of the quintic</title>
+  <link>https://isa-afp.org/entries/Unsolvable_Quintic.html</link>
+  <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
+  <description>The Abel-Ruffini theorem and the unsolvability of the quintic in the AFP</description>
+    <category>Mathematics/Algebra</category>
+</item>
+<item>
   <title>The Irrationality of ζ(5)</title>
   <link>https://isa-afp.org/entries/Zeta_5_Irrational.html</link>
   <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>

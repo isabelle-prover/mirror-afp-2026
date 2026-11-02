@@ -1,0 +1,55 @@
+title = "The Abel-Ruffini theorem and the unsolvability of the quintic"
+date = 2026-10-28
+topics = [
+  "Mathematics/Algebra",
+]
+abstract = """
+This entry proves the Abel--Ruffini theorem — a polynomial equation
+  solvable by radicals has a solvable Galois group — and applies it to a
+  concrete quintic to conclude that the general quintic is not solvable by
+  radicals.  We follow the corresponding mathlib formalisation.
+
+  The forward direction — solvable by radicals implies solvable Galois
+  group — is assembled on the session New_Algebra: cyclotomic and Kummer extensions have solvable (indeed
+  abelian) Galois groups, solvability is preserved by the tower correspondence,
+  and the normal closure of a radical tower is again a radical tower obtained by
+  splicing the Galois conjugates of the original tower.
+
+  For the concrete witness we study the rational quintic $\\Phi = x^5 - 4x + 2$
+  and show that the Galois group of its splitting field over $\\mathbb{Q}$ is
+  not solvable.  We prove that $\\Phi$ is irreducible over $\\mathbb{Q}$
+  (Eisenstein's criterion at 2) and, using the AFP
+  entry Sturm_Sequences, show that it has exactly three
+  real roots and one conjugate pair of non-real roots. Complex conjugation
+  therefore acts on the five roots as a transposition, while irreducibility
+  makes the Galois action transitive; a transitive subgroup of $S_5$ containing
+  a transposition is the whole of $S_5$, which is not solvable.  Combining the
+  two halves yields the headline result that $\\Phi$ is not solvable by radicals."""
+license = "bsd"
+note = ""
+creation_note = """
+Created using Claude but thoroughly revised manually.
+
+
+
+
+
+"""
+
+[authors]
+
+[authors.paulson]
+email = "paulson_email"
+
+[contributors]
+
+[notify]
+paulson = "paulson_email"
+
+[history]
+
+[extra]
+
+[related]
+dois = []
+pubs = []

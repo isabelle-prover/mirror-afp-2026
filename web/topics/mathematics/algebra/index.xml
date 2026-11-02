@@ -4,6 +4,13 @@
     <title>Mathematics/Algebra</title>
     <link>https://isa-afp.org/topics/mathematics/algebra/</link>
     <description>AFP entries in Algebra</description><item>
+  <title>The Abel-Ruffini theorem and the unsolvability of the quintic</title>
+  <link>https://isa-afp.org/entries/Unsolvable_Quintic.html</link>
+  <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
+  <description>The Abel-Ruffini theorem and the unsolvability of the quintic in the AFP</description>
+    <category>Mathematics/Algebra</category>
+</item>
+<item>
   <title>Fast Chinese Remaindering via Product Trees</title>
   <link>https://isa-afp.org/entries/CRT_Product_Tree.html</link>
   <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
