@@ -1,0 +1,63 @@
+title = "Cauchy's Functional Equation"
+date = 2026-09-11
+topics = [
+  "Mathematics/Analysis",
+]
+abstract = """
+Cauchy's functional equation is the equation
+  \\[ h(x + y) = h(x) + h(y). \\]
+This entry formalizes properties of the solutions \\(h : \\mathbb{R} \\to \\mathbb{R}\\) of Cauchy's functional equation, including:
+<ul>
+  <li>
+    A function \\(h\\) satisfying Cauchy's functional equation has the form
+    \\(h(x) = cx\\) for some \\(c\\) if one of the following conditions holds:
+    <ul>
+      <li>\\(h\\) is continuous at some point.</li>
+      <li>\\(h\\) is continuous.</li>
+      <li>\\(h\\) is bounded on some interval.</li>
+      <li>\\(h\\) is (anti)monotone on some interval.</li>
+      <li>\\(h\\) is measurable.</li>
+    </ul>
+  </li>
+  <li>There are non-linear solutions to Cauchy's functional equation.</li>
+  <li>The set of non-linear solutions has cardinality \\(|\\mathbb{R}^{\\mathbb{R}}|\\).</li>
+  <li>
+    The graph of a non-linear solution\\(\\{(x, h(x)) \\mid x \\in \\mathbb{R}\\}\\)
+    is dense in \\(\\mathbb{R} \\times \\mathbb{R}\\).
+  </li>
+</ul>"""
+license = "bsd"
+note = ""
+creation_note = """
+Subsections “Case: h is Monotone”, “h is Bounded”, “Corollaries”, and section “Non-Linear Solutions”, were written by a generative AI.
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+
+[authors]
+
+[authors.hirata]
+email = "hirata_email"
+
+[contributors]
+
+[notify]
+hirata = "hirata_email"
+
+[history]
+
+[extra]
+
+[related]
+dois = []
+pubs = []

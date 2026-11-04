@@ -1,0 +1,39 @@
+title = "Regular Variation"
+date = 2026-09-11
+topics = [
+  "Mathematics/Analysis",
+]
+abstract = """
+This entry formalizes regularly varying functions.
+Roughly speaking, a regularly varying function is a function whose behavior
+at infinity is similar to that of a power-law function.
+Regularly varying functions are typically used in extreme value theory,
+a branch of statistics.
+We formalize the definition of regularly varying functions and standard
+results about them, including:
+<ul>
+  <li>the uniform convergence theorem,</li>
+  <li>Karamata's representation theorem, and</li>
+  <li>Karamata's theorem.</li>
+</ul>"""
+license = "bsd"
+note = ""
+creation_note = ""
+
+[authors]
+
+[authors.hirata]
+email = "hirata_email"
+
+[contributors]
+
+[notify]
+hirata = "hirata_email"
+
+[history]
+
+[extra]
+
+[related]
+dois = []
+pubs = []

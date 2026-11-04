@@ -1,0 +1,55 @@
+title = "Extreme Value Theory"
+date = 2026-09-11
+topics = [
+  "Mathematics/Probability theory",
+]
+abstract = """
+This entry is a formalization of extreme value theory (EVT).
+EVT is a branch of probability theory and statistics that studies
+<em>rare events</em>.
+We formalize two main results of EVT, mainly following the books by
+<a href=\"https://doi.org/10.1007/0-387-34471-3\">de Haan and Ferreira</a>
+and by
+<a href=\"https://doi.org/10.1007/978-3-642-33483-2\">Embrechts et al</a>.
+<ul>
+  <li>
+    The Fisher&ndash;Tippett&ndash;Gnedenko theorem, stating that if the
+    properly normalized maximum of i.i.d.&nbsp;random variables converges in
+    distribution to a non-degenerate limit, then the limit is an extreme value
+    distribution.
+  </li>
+  <li>
+    The Pickands&ndash;Balkema&ndash;de Haan theorem, stating that the
+    conditional distribution of the excesses over a threshold \\(u\\) converges
+    uniformly in the excess, with a suitable scale \\(\\beta(u)\\), to a
+    generalized Pareto distribution as \\(u\\) tends to the right endpoint of the
+    support, if and only if the underlying distribution belongs to the maximum
+    domain of attraction of an extreme value distribution.
+  </li>
+</ul>"""
+license = "bsd"
+note = ""
+creation_note = """
+More than 95% of the Isabelle codes were written by a generative AI.
+
+
+
+"""
+
+[authors]
+
+[authors.hirata]
+email = "hirata_email"
+
+[contributors]
+
+[notify]
+hirata = "hirata_email"
+
+[history]
+
+[extra]
+
+[related]
+dois = []
+pubs = []

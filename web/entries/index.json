@@ -167,6 +167,63 @@
   "year": "2026"
  },
  {
+  "abstract": "Cauchy's functional equation is the equation \\[ h(x + y) = h(x) + h(y). \\] This entry formalizes properties of the solutions \\(h : \\mathbb{R} \\to \\mathbb{R}\\) of Cauchy's functional equation, including: A function \\(h\\) satisfying Cauchy's functional equation has the form \\(h(x) = cx\\) for some \\(c\\) if one of the following conditions holds: \\(h\\) is continuous at some point. \\(h\\) is continuous. \\(h\\) is bounded on some interval. \\(h\\) is (anti)monotone on some interval. \\(h\\) is measurable. There are non-linear solutions to Cauchy's functional equation. The set of non-linear solutions has cardinality \\(|\\mathbb{R}^{\\mathbb{R}}|\\). The graph of a non-linear solution\\(\\{(x, h(x)) \\mid x \\in \\mathbb{R}\\}\\) is dense in \\(\\mathbb{R} \\times \\mathbb{R}\\). ",
+  "authors": [
+   "Michikazu Hirata"
+  ],
+  "date": "2026-09-11",
+  "link": "../entries/Cauchy_Functional_Equation.html",
+  "permalink": "https://isa-afp.org/entries/Cauchy_Functional_Equation.html",
+  "related": [],
+  "shortname": "Cauchy_Functional_Equation",
+  "title": "Cauchy's Functional Equation",
+  "topic_links": [
+   "../topics/mathematics/analysis/"
+  ],
+  "topics": [
+   "Mathematics/Analysis"
+  ],
+  "year": "2026"
+ },
+ {
+  "abstract": "This entry is a formalization of extreme value theory (EVT). EVT is a branch of probability theory and statistics that studies rare events. We formalize two main results of EVT, mainly following the books by de Haan and Ferreira and by Embrechts et al. The Fisher\u0026ndash;Tippett\u0026ndash;Gnedenko theorem, stating that if the properly normalized maximum of i.i.d.\u0026nbsp;random variables converges in distribution to a non-degenerate limit, then the limit is an extreme value distribution. The Pickands\u0026ndash;Balkema\u0026ndash;de Haan theorem, stating that the conditional distribution of the excesses over a threshold \\(u\\) converges uniformly in the excess, with a suitable scale \\(\\beta(u)\\), to a generalized Pareto distribution as \\(u\\) tends to the right endpoint of the support, if and only if the underlying distribution belongs to the maximum domain of attraction of an extreme value distribution. ",
+  "authors": [
+   "Michikazu Hirata"
+  ],
+  "date": "2026-09-11",
+  "link": "../entries/Extreme_Value_Theory.html",
+  "permalink": "https://isa-afp.org/entries/Extreme_Value_Theory.html",
+  "related": [],
+  "shortname": "Extreme_Value_Theory",
+  "title": "Extreme Value Theory",
+  "topic_links": [
+   "../topics/mathematics/probability-theory/"
+  ],
+  "topics": [
+   "Mathematics/Probability theory"
+  ],
+  "year": "2026"
+ },
+ {
+  "abstract": "This entry formalizes regularly varying functions. Roughly speaking, a regularly varying function is a function whose behavior at infinity is similar to that of a power-law function. Regularly varying functions are typically used in extreme value theory, a branch of statistics. We formalize the definition of regularly varying functions and standard results about them, including: the uniform convergence theorem, Karamata's representation theorem, and Karamata's theorem. ",
+  "authors": [
+   "Michikazu Hirata"
+  ],
+  "date": "2026-09-11",
+  "link": "../entries/Regular_Variation.html",
+  "permalink": "https://isa-afp.org/entries/Regular_Variation.html",
+  "related": [],
+  "shortname": "Regular_Variation",
+  "title": "Regular Variation",
+  "topic_links": [
+   "../topics/mathematics/analysis/"
+  ],
+  "topics": [
+   "Mathematics/Analysis"
+  ],
+  "year": "2026"
+ },
+ {
   "abstract": "This entry formalizes the classical Földes–Hammer theorem characterizing finite split graphs as exactly the graphs with no induced copy of \\(2K_2\\), \\(C_4\\), or \\(C_5\\). It builds on the AFP session Undirected_Graph_Theory.",
   "authors": [
    "Arthur Freitas Ramos",

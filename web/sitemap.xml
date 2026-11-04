@@ -29,6 +29,15 @@
     <loc>https://isa-afp.org/entries/Teichmuller_Tukey_Lemma.html</loc>
     <lastmod>2026-09-21T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://isa-afp.org/entries/Cauchy_Functional_Equation.html</loc>
+    <lastmod>2026-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://isa-afp.org/entries/Extreme_Value_Theory.html</loc>
+    <lastmod>2026-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://isa-afp.org/entries/Regular_Variation.html</loc>
+    <lastmod>2026-09-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://isa-afp.org/entries/Foldes_Hammer.html</loc>
     <lastmod>2026-09-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -6201,6 +6210,8 @@
   </url><url>
     <loc>https://isa-afp.org/thys/Cauchy_Davenport_Vosper/Vosper_Support.html</loc>
   </url><url>
+    <loc>https://isa-afp.org/thys/Cauchy_Functional_Equation/Cauchy_Functional_Equation.html</loc>
+  </url><url>
     <loc>https://isa-afp.org/thys/Cauchy/CauchySchwarz.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/Cauchy/CauchysMeanTheorem.html</loc>
@@ -9996,6 +10007,18 @@
     <loc>https://isa-afp.org/thys/Extended_Finite_State_Machines/Value_Lexorder.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/Extended_Finite_State_Machines/VName.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Extreme_Value_Theory/Domain_of_Attraction.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Extreme_Value_Theory/Examples.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Extreme_Value_Theory/Extreme_Value_Distribution.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Extreme_Value_Theory/Lemmas_EVT.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Extreme_Value_Theory/Pareto_Distribution.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Extreme_Value_Theory/Peaks_Over_Threshold.html</loc>
   </url><url>
     <loc>https://isa-afp.org/authors/suarez/</loc>
   </url><url>
@@ -22768,6 +22791,10 @@
     <loc>https://isa-afp.org/thys/Regular_Tree_Relations/Tree_Automata_Impl.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/Regular_Tree_Relations/Tree_Automata_Pumping.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Regular_Variation/Lemmas_Regular_Variation.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Regular_Variation/Regular_Variation.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/Regular-Sets/Derivatives.html</loc>
   </url><url>
