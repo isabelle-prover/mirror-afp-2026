@@ -1,0 +1,10 @@
+chapter AFP
+
+session "Cauchy_Functional_Equation" (AFP) = "HOL-Probability" +
+  options [timeout = 300]
+  sessions "Riesz_Representation"
+  theories
+    "Cauchy_Functional_Equation"
+  document_files
+    "root.tex"
+    "root.bib"

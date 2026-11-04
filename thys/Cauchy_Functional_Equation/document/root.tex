@@ -1,0 +1,83 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{isabelle,isabellesym}
+
+% further packages required for unusual symbols (see also
+% isabellesym.sty), use only when needed
+
+
+\usepackage{amssymb,amsmath}
+  %for \<leadsto>, \<box>, \<diamond>, \<sqsupset>, \<mho>, \<Join>,
+  %\<lhd>, \<lesssim>, \<greatersim>, \<lessapprox>, \<greaterapprox>,
+  %\<triangleq>, \<yen>, \<lozenge>
+
+%\usepackage{eurosym}
+  %for \<euro>
+
+\usepackage[only,bigsqcap]{stmaryrd}
+%for \<Sqinter>
+
+%\usepackage{eufrak}
+  %for \<AA> ... \<ZZ>, \<aa> ... \<zz> (also included in amssymb)
+
+%\usepackage{textcomp}
+  %for \<onequarter>, \<onehalf>, \<threequarters>, \<degree>, \<cent>,
+  %\<currency>
+
+% this should be the last package used
+\usepackage{pdfsetup}
+
+% urls in roman style, theory text in math-similar italics
+\urlstyle{rm}
+\isabellestyle{it}
+
+
+% for uniform font size
+%\renewcommand{\isastyle}{\isastyleminor}
+
+
+\begin{document}
+
+\title{Cauchy's Functional Equation}
+\author{Michikazu Hirata}
+\maketitle
+\begin{abstract}
+  Cauchy's functional equation is the equation
+  \[h(x + y) = h(x) + h(y).\]
+  This entry formalizes properties of the solutions
+  $h:\mathbb{R}\to\mathbb{R}$ of Cauchy's functional equation, including:
+  \begin{itemize}
+  \item A function $h$ satisfying Cauchy's functional equation has the form
+        $h(x) = c x$ for some $c$ if one of the following conditions holds:
+    \begin{itemize}
+    \item $h$ is continuous at some point.
+    \item $h$ is continuous.
+    \item $h$ is bounded on some interval.
+    \item $h$ is (anti)monotone on some interval.
+    \item $h$ is measurable.
+    \end{itemize}
+  \item There are non-linear solutions to Cauchy's functional equation.
+  \item The set of non-linear solutions has cardinality $|\mathbb{R}^{\mathbb{R}}|$.
+  \item The graph of a non-linear solution $\{(x,h(x))\mid x\in\mathbb{R}\}$ is
+  dense in $\mathbb{R}\times\mathbb{R}$.
+  \end{itemize}
+\end{abstract}
+
+\tableofcontents
+
+% sane default for proof documents
+\parindent 0pt\parskip 0.5ex
+
+% generated text of all theories
+\input{session}
+
+% optional bibliography
+\bibliographystyle{abbrv}
+\bibliography{root}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

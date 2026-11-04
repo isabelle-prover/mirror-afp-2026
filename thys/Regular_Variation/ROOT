@@ -1,0 +1,12 @@
+chapter AFP
+
+session "Regular_Variation" (AFP) = "HOL-Probability" +
+  options [timeout = 300]
+  sessions "Riesz_Representation"
+           "Cauchy_Functional_Equation"
+  theories
+    "Lemmas_Regular_Variation"
+    "Regular_Variation"
+  document_files
+    "root.tex"
+    "root.bib"

@@ -124,6 +124,7 @@ Category_Set
 Catoids
 Cauchy
 Cauchy_Davenport_Vosper
+Cauchy_Functional_Equation
 Cayley_Hamilton
 Certification_Monads
 Ceva
@@ -289,6 +290,7 @@ Expander_Graphs
 Exp_Log_Integral
 Extended_Finite_State_Machine_Inference
 Extended_Finite_State_Machines
+Extreme_Value_Theory
 Fair_Games_Theorem
 FFT
 FLP
@@ -803,6 +805,7 @@ Regression_Test_Selection
 Regular-Sets
 Regular_Algebras
 Regular_Tree_Relations
+Regular_Variation
 Relation_Algebra
 Relational-Incorrectness-Logic
 Relational_Cardinality

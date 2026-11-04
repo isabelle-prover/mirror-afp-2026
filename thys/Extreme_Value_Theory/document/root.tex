@@ -1,0 +1,82 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{isabelle,isabellesym}
+
+% further packages required for unusual symbols (see also
+% isabellesym.sty), use only when needed
+
+
+\usepackage{amssymb,amsmath}
+  %for \<leadsto>, \<box>, \<diamond>, \<sqsupset>, \<mho>, \<Join>,
+  %\<lhd>, \<lesssim>, \<greatersim>, \<lessapprox>, \<greaterapprox>,
+  %\<triangleq>, \<yen>, \<lozenge>
+
+%\usepackage{eurosym}
+  %for \<euro>
+
+%\usepackage[only,bigsqcap]{stmaryrd}
+%for \<Sqinter>
+
+%\usepackage{eufrak}
+  %for \<AA> ... \<ZZ>, \<aa> ... \<zz> (also included in amssymb)
+
+%\usepackage{textcomp}
+  %for \<onequarter>, \<onehalf>, \<threequarters>, \<degree>, \<cent>,
+  %\<currency>
+
+% this should be the last package used
+\usepackage{pdfsetup}
+
+% urls in roman style, theory text in math-similar italics
+\urlstyle{rm}
+\isabellestyle{it}
+
+
+% for uniform font size
+%\renewcommand{\isastyle}{\isastyleminor}
+
+
+\begin{document}
+
+\title{Extreme Value Theory}
+\author{Michikazu Hirata}
+\maketitle
+\begin{abstract}
+  This entry is a formalization of extreme value theory (EVT).
+  EVT is a branch of probability theory and statistics that studies \emph{rare events}.
+  We formalize two main results of EVT, mainly following the books
+  by de Haan and Ferreira~\cite{deHaanFerreira}
+  and by Embrechts et al.~\cite{EmbrechtsKluppelbergMikosch}.
+  \begin{itemize}
+  \item The Fisher--Tippett--Gnedenko theorem, stating that
+  if the properly normalized maximum of i.i.d.~random variables converges
+  in distribution to a non-degenerate limit, then the limit is an extreme value
+  distribution.
+  \item The Pickands--Balkema--de Haan theorem, stating that
+  the conditional distribution of the excesses over a threshold $u$
+  converges uniformly in the excess, with a suitable scale $\beta(u)$,
+  to a generalized Pareto distribution
+  as $u$ tends to the right endpoint of the support,
+  if and only if the underlying distribution belongs
+  to the maximum domain of attraction of an extreme value distribution.
+  \end{itemize}
+\end{abstract}
+
+\tableofcontents
+
+% sane default for proof documents
+\parindent 0pt\parskip 0.5ex
+
+% generated text of all theories
+\input{session}
+
+% optional bibliography
+\bibliographystyle{abbrv}
+\bibliography{root}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

@@ -1,0 +1,17 @@
+chapter AFP
+
+session "Extreme_Value_Theory" (AFP) = "HOL-Probability" +
+  options [timeout = 600]
+  sessions
+    "Regular_Variation"
+    "Cauchy_Functional_Equation"
+  theories
+   "Lemmas_EVT"
+   "Extreme_Value_Distribution"
+   "Pareto_Distribution"
+   "Domain_of_Attraction"
+   "Peaks_Over_Threshold"
+   "Examples"
+  document_files
+    "root.tex"
+    "root.bib"
