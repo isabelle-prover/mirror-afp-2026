@@ -829,7 +829,7 @@
   "year": "2026"
  },
  {
-  "abstract": "This entry extends the AFP formalization Correctness and Complexity of BMSSP in Isabelle/HOL, which formalizes the bounded multi-source shortest path algorithm of Duan, Mao, Mao, Shu, and Yin. The published entry is imported as a dependency and is not duplicated. The extension adds a charged direct-insert relation that records both the range charged by the recurrence and the semantic output returned by each recursive child. It proves that least costs are realized by verified-correct runs, exhibits a closed branching instance, and records a machine-checked totality obstruction for the older diagonal exact-concrete path-family relation. Its main theorem, path_nonvac_runtime_bigo_card_V_unconditional, proves without run-existence, cost-bound, or closed-bound assumptions that the least charged cost on the growing unit-weight path family is \\(O(|V_n| \\log^{2/3}|V_n|)\\) when the internal schedule is evaluated at \\(n^2\\). This is a cost-relation theorem, not a machine-step bound for the SML executable from the base entry.",
+  "abstract": "This entry extends the AFP formalization Correctness and Complexity of BMSSP in Isabelle/HOL, which formalizes the bounded multi-source shortest path algorithm of Duan, Mao, Mao, Shu, and Yin. The extension adds a charged direct-insert relation that records both the range charged by the recurrence and the semantic output returned by each recursive child. It proves that least costs are realized by verified-correct runs, exhibits a closed branching instance, and records a machine-checked totality obstruction for the older diagonal exact-concrete path-family relation. Its main theorem, path_nonvac_runtime_bigo_card_V_unconditional, proves without run-existence, cost-bound, or closed-bound assumptions that the least charged cost on the growing unit-weight path family is \\(O(|V_n| \\log^{2/3}|V_n|)\\) when the internal schedule is evaluated at \\(n^2\\). This is a cost-relation theorem, not a machine-step bound for the SML executable from the base entry.",
   "authors": [
    "Arthur Freitas Ramos",
    "David Barros Hulak",
@@ -844,7 +844,7 @@
    }
   ],
   "shortname": "BMSSP_Runtime_Extensions",
-  "title": "Runtime Extensions for BMSSP in Isabelle/HOL",
+  "title": "Runtime Extensions for BMSSP",
   "topic_links": [
    "../topics/computer-science/algorithms/graph/",
    "../topics/logic/general-logic/mechanization-of-proofs/"

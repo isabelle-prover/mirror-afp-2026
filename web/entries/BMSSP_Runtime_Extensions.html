@@ -2,10 +2,10 @@
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Runtime Extensions for BMSSP in Isabelle/HOL - Archive of Formal Proofs</title>
-    <meta name="description" content="Runtime Extensions for BMSSP in Isabelle/HOL in the Archive of Formal Proofs">
-    <meta property="og:description" content="Runtime Extensions for BMSSP in Isabelle/HOL in the Archive of Formal Proofs">
-    <meta property="og:title" content="Runtime Extensions for BMSSP in Isabelle/HOL">
+    <title>Runtime Extensions for BMSSP - Archive of Formal Proofs</title>
+    <meta name="description" content="Runtime Extensions for BMSSP in the Archive of Formal Proofs">
+    <meta property="og:description" content="Runtime Extensions for BMSSP in the Archive of Formal Proofs">
+    <meta property="og:title" content="Runtime Extensions for BMSSP">
     <meta property="og:url" content="https://isa-afp.org/entries/BMSSP_Runtime_Extensions.html">
     <meta property="og:image" content="https://isa-afp.org/images/afp.png">
     <meta property="og:type" content="article">
@@ -87,7 +87,7 @@
       </div>
     </form>
   <h1>
-    <span class='first'>R</span>untime <span class='first'>E</span>xtensions for <span class='first'>B</span><span class='first'>M</span><span class='first'>S</span><span class='first'>S</span><span class='first'>P</span> in <span class='first'>I</span>sabelle/<span class='first'>H</span><span class='first'>O</span><span class='first'>L</span>
+    <span class='first'>R</span>untime <span class='first'>E</span>xtensions for <span class='first'>B</span><span class='first'>M</span><span class='first'>S</span><span class='first'>S</span><span class='first'>P</span>
   </h1>
   <div>
       <p><a href="../authors/ramos/">Arthur Freitas Ramos</a> <a class="obfuscated" data="eyJ1c2VyIjpbImFyZnJlaXRhIl0sImhvc3QiOlsibWljcm9zb2Z0IiwiY29tIl19">📧</a>, <a href="../authors/hulak/">David Barros Hulak</a> <a class="obfuscated" data="eyJ1c2VyIjpbImRiaHVsYWsiXSwiaG9zdCI6WyJnbWFpbCIsImNvbSJdfQ==">📧</a> and <a href="../authors/queiroz/">Ruy Jose Guerra Barretto de Queiroz</a> <a class="obfuscated" data="eyJ1c2VyIjpbInJ1eSJdLCJob3N0IjpbImNpbiIsInVmcGUiLCJiciJdfQ==">📧</a>
@@ -99,7 +99,7 @@
   <main>
 
     <h3>Abstract</h3>
-    <div class="abstract mathjax_process">This entry extends the AFP formalization <em>Correctness and Complexity of BMSSP in Isabelle/HOL</em>, which formalizes the bounded multi-source shortest path algorithm of Duan, Mao, Mao, Shu, and Yin. The published entry is imported as a dependency and is not duplicated.
+    <div class="abstract mathjax_process">This entry extends the AFP formalization <em>Correctness and Complexity of BMSSP in Isabelle/HOL</em>, which formalizes the bounded multi-source shortest path algorithm of Duan, Mao, Mao, Shu, and Yin.
 
 The extension adds a charged direct-insert relation that records both the range charged by the recurrence and the semantic output returned by each recursive child. It proves that least costs are realized by verified-correct runs, exhibits a closed branching instance, and records a machine-checked totality obstruction for the older diagonal exact-concrete path-family relation. Its main theorem, <code>path_nonvac_runtime_bigo_card_V_unconditional</code>, proves without run-existence, cost-bound, or closed-bound assumptions that the least charged cost on the growing unit-weight path family is \(O(|V_n| \log^{2/3}|V_n|)\) when the internal schedule is evaluated at \(n^2\). This is a cost-relation theorem, not a machine-step bound for the SML executable from the base entry.</div>
 
@@ -108,7 +108,7 @@ The extension adds a charged direct-insert relation that records both the range 
         <a href="https://isa-afp.org/LICENSE">BSD License</a>
     </div>
       <h3>Note</h3>
-      <p><em>Generative AI was used for proof engineering. The final definitions, statements, and proofs were checked by Isabelle.</em></p>
+      <p><em>Generative AI was used for proof engineering.</em></p>
       <h3>Topics</h3>
       <ul>
           <li><a href="../topics/computer-science/algorithms/graph/">Computer science/Algorithms/Graph</a></li>
@@ -159,7 +159,7 @@ The extension adds a charged direct-insert relation that records both the range 
         <p style="display:none;" id="bibtex-filename">BMSSP_Runtime_Extensions-AFP</p>
         <pre id="copy-text">@article{BMSSP_Runtime_Extensions-AFP,
   author  = {Arthur Freitas Ramos and David Barros Hulak and Ruy Jose Guerra Barretto de Queiroz},
-  title   = {Runtime Extensions for BMSSP in Isabelle/HOL},
+  title   = {Runtime Extensions for BMSSP},
   journal = {Archive of Formal Proofs},
   month   = {July},
   year    = {2026},
