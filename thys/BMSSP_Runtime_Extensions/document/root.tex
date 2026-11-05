@@ -1,0 +1,149 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{isabelle,isabellesym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{url}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\idpath}[1]{\path{#1}}
+\newcommand{\id}[1]{\ifmmode\mbox{\idpath{#1}}\else\idpath{#1}\fi}
+\newcommand{\thy}[1]{\id{#1}}
+\newcommand{\thm}[1]{\id{#1}}
+\emergencystretch=3em
+
+\isabellestyle{it}
+\def\isacharunderscore{\discretionary{-}{}{-}}
+\def\isacharunderscorekeyword{\discretionary{-}{}{-}}
+
+\begin{document}
+
+\title{Runtime Extensions for BMSSP in Isabelle/HOL}
+\author{Arthur Freitas Ramos \and David Barros Hulak \and Ruy J. G. B. de Queiroz}
+\maketitle
+
+\begin{abstract}
+This entry extends the AFP formalization
+\emph{Correctness and Complexity of BMSSP in Isabelle/HOL}~\cite{BMSSP-AFP},
+which formalizes the bounded multi-source shortest path algorithm of Duan,
+Mao, Mao, Shu, and Yin~\cite{DuanMaoMaoShuYin2025}.  The published entry is
+imported as a dependency and is not duplicated.
+
+The extension adds a charged direct-insert relation that records both the
+range charged by the recurrence and the semantic output returned by each
+recursive child.  It proves that least costs are realized by verified-correct
+runs, exhibits a closed branching instance, and records a
+machine-checked totality obstruction for the older diagonal exact-concrete
+path-family relation.  Its main theorem,
+\texttt{path\_nonvac\_runtime\_bigo\_card\_V\_unconditional}, proves without
+run-existence, cost-bound, or closed-bound assumptions that the least charged
+cost on the growing unit-weight path family is
+\(O(\lvert V_n\rvert \log^{2/3}\lvert V_n\rvert)\) when the internal schedule
+is evaluated at \(n^2\).  This is a cost-relation theorem, not a machine-step
+bound for the SML executable from the base entry.
+
+AI assistance was used for proof engineering. The final definitions,
+statements, and proofs are checked by Isabelle.
+\end{abstract}
+
+\tableofcontents
+
+\section{Relationship to the Published Entry}
+
+The base entry~\cite{BMSSP-AFP} supplies finite weighted digraph semantics,
+BMSSP pre- and postconditions, the recursive and exact-concrete cost
+relations, logarithmic schedule bounds, a bucketed partition model, and
+executable correctness.  This entry is a child session of
+\texttt{BMSSP\_Correctness}.  Its first three theories add only the new
+charged relation and lemmas required by the follow-up; all other theories
+import those extensions and the published AFP theories.
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}p{0.29\textwidth}Y@{}}
+\toprule
+\textbf{Theory} & \textbf{Added surface} \\
+\midrule
+\thy{BMSSP_Direct_Insert_Extensions} &
+Charged direct-insert run and loop relations, correctness, existence, and
+child-cost accounting. \\
+\thy{BMSSP_Strict_Tie_Breaking_Extensions} &
+Charged progress and level-bound closers under strict tie breaking. \\
+\thy{BMSSP_Top_Level_Bounds_Extensions} &
+Charged top-level run, cost, least-time, correctness, and refined-bound
+interfaces. \\
+\thy{BMSSP_Verified_Runtime} &
+Joins the existing asymptotic least-cost theorem with correctness of a run
+realizing that least cost. \\
+\thy{BMSSP_Runtime_Instance_Branching} &
+A closed out-star instance of the verified-runtime theorem. \\
+\thy{BMSSP_Path_Family_Extended} &
+The growing unit-weight path family, the unconditional cost-expression floor,
+and conditional diagonal runtime statements. \\
+\thy{BMSSP_Cost_Totality} &
+The exact-concrete diagonal totality obstruction. \\
+\thy{BMSSP_NonVacuous_Family} &
+The decoupled charged family and unconditional non-vacuous runtime headline. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{The Unconditional Size-Parametric Headline}
+
+For \(n\in\mathbb{N}\), let \(P_n\) be the directed unit-weight path with
+vertices \(0,\ldots,n\).  The development proves
+\begin{center}
+\thm{path_nonvac_runtime_bigo_card_V_unconditional}
+\end{center}
+with the asymptotic meaning
+\[
+  T(n) \in
+  O\!\left(\lvert V_n\rvert
+    \bigl(\ln(\lvert V_n\rvert+2)\bigr)^{2/3}\right),
+\]
+where \(T(n)=\thm{path_nonvac_time}\ n\) is the least charged direct-insert
+top-level cost for \(P_n\) at internal schedule \(n^2\).
+
+The statement has no assumptions.  Its non-vacuity is explicit:
+\thm{eventually_path_nonvac_charged_cost_exists} proves that charged runs
+exist for all but finitely many \(n\), and
+\thm{path_k_charged_cheap_imp_nonvac_time_le_bound} constructs a charged cost
+below the refined graph-time budget.  The square schedule leaves the target
+logarithmic class unchanged because \(\ln(n^2)=2\ln n\), while making the
+level cap eventually large enough to cover the path.
+
+\section{Verified Runtime and the Obstruction Record}
+
+The theorem \thm{verified_bmssp_runtime_bigo_target} strengthens the base
+entry's least-cost asymptotic statement by proving that the least cost is
+eventually realized by an exact-concrete top-level run whose completed set is
+the whole graph and whose output satisfies \thm{sssp_correct}.  The theory
+\thy{BMSSP_Runtime_Instance_Branching} closes this statement on an out-star
+whose source has two incomparable outgoing shortest paths.
+
+Separately, \thy{BMSSP_Cost_Totality} proves the structural obstruction in the
+older diagonal exact-concrete loop relation: a genuine step is forced to the
+initial prefix under a sound label, and no genuine step can begin at a
+positive lower bound.  The conditional diagonal family theorem is therefore
+not used as evidence for non-vacuity.  The unconditional headline instead
+uses the charged relation and decouples graph size from the internal schedule.
+
+\section{Scope}
+
+The imported base entry remains the source of executable
+\texttt{bmssp\_distances} and its functional-correctness theorem.  This entry
+does not claim that generated SML executes within the asymptotic cost bound.
+The runtime statements concern the formal cost relations and their
+graph-size-parametric instances.
+
+\section{Checked Source}
+
+\input{session}
+
+\bibliographystyle{abbrv}
+\bibliography{root}
+
+\end{document}

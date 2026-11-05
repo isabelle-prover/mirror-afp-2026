@@ -1,0 +1,10 @@
+chapter AFP
+
+session BMSSP_Runtime_Extensions = BMSSP_Correctness +
+  options [document = pdf, timeout = 600]
+  theories
+    BMSSP_Runtime_Instance_Branching
+    BMSSP_NonVacuous_Family
+  document_files
+    "root.tex"
+    "root.bib"
