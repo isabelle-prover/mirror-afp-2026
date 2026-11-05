@@ -92,6 +92,14 @@
     <category>Logic/General logic/Mechanization of proofs</category>
 </item>
 <item>
+  <title>Runtime Extensions for BMSSP in Isabelle/HOL</title>
+  <link>https://isa-afp.org/entries/BMSSP_Runtime_Extensions.html</link>
+  <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+  <description>Runtime Extensions for BMSSP in Isabelle/HOL in the AFP</description>
+    <category>Computer science/Algorithms/Graph</category>
+    <category>Logic/General logic/Mechanization of proofs</category>
+</item>
+<item>
   <title>Checking Equality-Saturation Merge and Extraction Certificates</title>
   <link>https://isa-afp.org/entries/Equality_Saturation_Checker.html</link>
   <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>

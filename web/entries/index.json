@@ -829,6 +829,33 @@
   "year": "2026"
  },
  {
+  "abstract": "This entry extends the AFP formalization Correctness and Complexity of BMSSP in Isabelle/HOL, which formalizes the bounded multi-source shortest path algorithm of Duan, Mao, Mao, Shu, and Yin. The published entry is imported as a dependency and is not duplicated. The extension adds a charged direct-insert relation that records both the range charged by the recurrence and the semantic output returned by each recursive child. It proves that least costs are realized by verified-correct runs, exhibits a closed branching instance, and records a machine-checked totality obstruction for the older diagonal exact-concrete path-family relation. Its main theorem, path_nonvac_runtime_bigo_card_V_unconditional, proves without run-existence, cost-bound, or closed-bound assumptions that the least charged cost on the growing unit-weight path family is \\(O(|V_n| \\log^{2/3}|V_n|)\\) when the internal schedule is evaluated at \\(n^2\\). This is a cost-relation theorem, not a machine-step bound for the SML executable from the base entry.",
+  "authors": [
+   "Arthur Freitas Ramos",
+   "David Barros Hulak",
+   "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "date": "2026-07-15",
+  "link": "../entries/BMSSP_Runtime_Extensions.html",
+  "permalink": "https://isa-afp.org/entries/BMSSP_Runtime_Extensions.html",
+  "related": [
+   {
+    "doi": "10.1145/3717823.3718179"
+   }
+  ],
+  "shortname": "BMSSP_Runtime_Extensions",
+  "title": "Runtime Extensions for BMSSP in Isabelle/HOL",
+  "topic_links": [
+   "../topics/computer-science/algorithms/graph/",
+   "../topics/logic/general-logic/mechanization-of-proofs/"
+  ],
+  "topics": [
+   "Computer science/Algorithms/Graph",
+   "Logic/General logic/Mechanization of proofs"
+  ],
+  "year": "2026"
+ },
+ {
   "abstract": "Equality-saturation engines maintain equalities in an e-graph and later extract a representative from an e-class. This entry verifies an executable checker for the corresponding engine boundary. It directly parses the flat annotated S-expression format returned by egg 0.11.0’s explanation API; flat explanations may apply numbered rewrite rules at positions or reuse equalities from earlier checked e-class merges. For extraction, a finite e-graph is represented as a topologically ordered e-class DAG. An executable bottom-up dynamic program selects a representative, and a formal proof establishes minimum additive cost over every term represented by the designated class. Class-aligned equality certificates additionally prove the selected term equivalent to the canonical class term. The development reuses the term, substitution, position, context, and rewriting infrastructure of the AFP entries First-Order Terms and First-Order Rewriting. Its soundness statements target their existing conversion relation. It does not introduce another first-order term datatype, rewrite relation, generic equational proof calculus, or proof of Birkhoﬀ’s theorem. Those generic equational results and a checker for equality proofs already exist in IsaFoR/CeTA. The new material is the chronological e-graph merge discipline, positional reuse of recorded merges, certified e-class DAG semantics, and globally optimal  dynamic-programming extraction.",
   "authors": [
    "Arthur Freitas Ramos",

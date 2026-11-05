@@ -107,6 +107,9 @@
     <loc>https://isa-afp.org/entries/Right_Forward_Closures.html</loc>
     <lastmod>2026-07-17T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://isa-afp.org/entries/BMSSP_Runtime_Extensions.html</loc>
+    <lastmod>2026-07-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://isa-afp.org/entries/Equality_Saturation_Checker.html</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
   </url><url>
@@ -5461,6 +5464,22 @@
     <loc>https://isa-afp.org/thys/BMSSP_Correctness/BMSSP_Top_Level_Bounds.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/BMSSP_Correctness/BMSSP_Unique_Shortest_Tree.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/BMSSP_Runtime_Extensions/BMSSP_Cost_Totality.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/BMSSP_Runtime_Extensions/BMSSP_Direct_Insert_Extensions.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/BMSSP_Runtime_Extensions/BMSSP_NonVacuous_Family.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/BMSSP_Runtime_Extensions/BMSSP_Path_Family_Extended.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/BMSSP_Runtime_Extensions/BMSSP_Runtime_Instance_Branching.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/BMSSP_Runtime_Extensions/BMSSP_Strict_Tie_Breaking_Extensions.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/BMSSP_Runtime_Extensions/BMSSP_Top_Level_Bounds_Extensions.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/BMSSP_Runtime_Extensions/BMSSP_Verified_Runtime.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/BNF_CC/Axiomatised_BNF_CC.html</loc>
   </url><url>
