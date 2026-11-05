@@ -21,7 +21,7 @@
 
 \begin{document}
 
-\title{Runtime Extensions for BMSSP in Isabelle/HOL}
+\title{Runtime Extensions for BMSSP}
 \author{Arthur Freitas Ramos \and David Barros Hulak \and Ruy J. G. B. de Queiroz}
 \maketitle
 
@@ -29,9 +29,7 @@
 This entry extends the AFP formalization
 \emph{Correctness and Complexity of BMSSP in Isabelle/HOL}~\cite{BMSSP-AFP},
 which formalizes the bounded multi-source shortest path algorithm of Duan,
-Mao, Mao, Shu, and Yin~\cite{DuanMaoMaoShuYin2025}.  The published entry is
-imported as a dependency and is not duplicated.
-
+Mao, Mao, Shu, and Yin~\cite{DuanMaoMaoShuYin2025}. 
 The extension adds a charged direct-insert relation that records both the
 range charged by the recurrence and the semantic output returned by each
 recursive child.  It proves that least costs are realized by verified-correct
@@ -45,8 +43,7 @@ cost on the growing unit-weight path family is
 is evaluated at \(n^2\).  This is a cost-relation theorem, not a machine-step
 bound for the SML executable from the base entry.
 
-AI assistance was used for proof engineering. The final definitions,
-statements, and proofs are checked by Isabelle.
+AI assistance was used for proof engineering.
 \end{abstract}
 
 \tableofcontents

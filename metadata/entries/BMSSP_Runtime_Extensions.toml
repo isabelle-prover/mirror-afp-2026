@@ -1,16 +1,16 @@
-title = "Runtime Extensions for BMSSP in Isabelle/HOL"
+title = "Runtime Extensions for BMSSP"
 date = 2026-07-15
 topics = [
   "Computer science/Algorithms/Graph",
   "Logic/General logic/Mechanization of proofs",
 ]
 abstract = """
-This entry extends the AFP formalization <em>Correctness and Complexity of BMSSP in Isabelle/HOL</em>, which formalizes the bounded multi-source shortest path algorithm of Duan, Mao, Mao, Shu, and Yin. The published entry is imported as a dependency and is not duplicated.
+This entry extends the AFP formalization <em>Correctness and Complexity of BMSSP in Isabelle/HOL</em>, which formalizes the bounded multi-source shortest path algorithm of Duan, Mao, Mao, Shu, and Yin.
 
 The extension adds a charged direct-insert relation that records both the range charged by the recurrence and the semantic output returned by each recursive child. It proves that least costs are realized by verified-correct runs, exhibits a closed branching instance, and records a machine-checked totality obstruction for the older diagonal exact-concrete path-family relation. Its main theorem, <code>path_nonvac_runtime_bigo_card_V_unconditional</code>, proves without run-existence, cost-bound, or closed-bound assumptions that the least charged cost on the growing unit-weight path family is \\(O(|V_n| \\log^{2/3}|V_n|)\\) when the internal schedule is evaluated at \\(n^2\\). This is a cost-relation theorem, not a machine-step bound for the SML executable from the base entry."""
 license = "bsd"
 note = ""
-creation_note = "Generative AI was used for proof engineering. The final definitions, statements, and proofs were checked by Isabelle."
+creation_note = "Generative AI was used for proof engineering."
 
 [authors]
 
