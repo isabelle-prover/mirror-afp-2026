@@ -1,0 +1,251 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{isabelle,isabellesym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+
+\isabellestyle{it}
+
+\begin{document}
+
+\title{A Minimal Homotopy Type Theory Object Logic for Isabelle/Pure}
+\author{Arthur Freitas Ramos \and David Barros Hulak \and
+  Ruy J. G. B. de Queiroz}
+\date{July 24, 2026}
+\maketitle
+
+\begin{abstract}
+This entry presents an independently authored higher-order abstract syntax
+encoding of intensional Martin-L\"of type theory
+\cite{MartinLof1984,NordstromPeterssonSmith1990} and a
+core homotopy type theory library \cite{HoTTBook2013} in Isabelle/Pure. The
+primitive object-logic rules are explicit axioms. Derived results cover
+identity-path algebra, transport, homotopies, contractibility, fibers,
+bi-invertibility, and the identity, inverse, and composite equivalences, so
+type equivalence is proved reflexive, symmetric, and transitive. The main
+characterization proves that a map is bi-invertible if and only if all of
+its fibers are contractible; contractibility is also shown to transfer along an
+equivalence in both directions.
+Function extensionality and univalence are isolated as optional additional
+axioms, each stated as bi-invertibility of its canonical map.
+\end{abstract}
+
+\tableofcontents
+
+\section{Scope and independence}
+
+The source was written from the mathematical presentation in the Homotopy Type
+Theory book \cite{HoTTBook2013}. It does not import, copy, rename, or adapt
+Joshua Chen's Isabelle/HoTT implementation. Chen's earlier Isabelle
+formalization \cite{Chen2021} is cited as related work, not as a source
+dependency.
+
+The distinct archival value is a minimal, automation-free, explicitly
+axiomatized HoTT object logic whose complete trusted boundary is visible in
+ordinary Isabelle theory files. It is intended as a reference foundation and
+audit target rather than as a replacement for a feature-rich interactive HoTT
+environment. That role is complementary to the large univalent libraries built
+on proof assistants with native dependent types, such as the Coq HoTT library
+\cite{BauerEtAl2017} and UniMath \cite{Voevodsky2015}, which optimize for
+mathematical reach rather than for a small auditable rule set.
+
+\begin{center}
+\small
+\begin{tabular}{@{}p{0.20\textwidth}p{0.36\textwidth}p{0.36\textwidth}@{}}
+\hline
+Aspect & This entry & Chen's Isabelle/HoTT \cite{Chen2021} \\
+\hline
+Development &
+Independently authored object logic from published mathematical rules &
+The original Isabelle/HoTT implementation \\
+Implementation &
+Ordinary Isabelle/Pure theories; no custom Isabelle/ML automation &
+Bidirectional type checking and elaboration infrastructure \\
+Trust presentation &
+Primitive rules and optional extensional axioms are visibly separated &
+Richer implementation and proof infrastructure for interactive use \\
+Formal scope &
+Focused foundational library: the full contractible-fiber characterization of
+equivalences, and closure under identity, inversion, and composition &
+Broader foundational results and a more convenient working environment \\
+Intended use &
+Explicit reference foundation and audit surface &
+Interactive HoTT formalization and elaboration environment \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Representation}
+
+Object expressions inhabit a fresh Pure type. Object binders are represented
+with higher-order abstract syntax \cite{PfenningElliott1988}, so Pure beta
+substitution implements object-level substitution. Isabelle/Pure is used as a
+logical framework in the sense of Paulson \cite{Paulson1989,%
+WenzelPaulsonNipkow2008}; the presentation
+also follows the general logical-framework discipline of
+Harper, Honsell, and Plotkin \cite{HarperHonsellPlotkin1993}. The object logic
+has a dedicated typing judgment and a primitive type of universe levels. A
+zero level, a successor operation, and a strict universe-level relation
+index cumulative Russell-style universes. The relation is axiomatized by a
+successor step, transitivity, and irreflexivity. Pure has no falsity, so
+irreflexivity is stated in ex-falso form: a self-relation \(i \prec_l i\)
+derives an arbitrary Pure proposition. Asymmetry, and hence the absence of
+short successor cycles, is derived from those axioms. The intended model reads
+levels as natural numbers, so the strictness axiom is not vacuous. The entry
+does not identify levels with Isabelle natural numbers or postulate an
+exhaustion principle for them.
+
+Dependent products and sums use Pure functions for their families. Application
+and projections are object-language constants, while their beta equations are
+Pure equalities. The empty type has formation and elimination but no
+introduction rule. Unit and natural-number eliminators have the expected
+computation equations. Identity types have reflexivity and based path
+induction.
+
+\section{Derived identity and equivalence layer}
+
+Transport is defined by path induction. Path inversion is another direct
+instance of path induction, and composition transports the first path along
+the second in a family of paths with fixed source. The development constructs
+inhabitants of the left and right unit laws, associativity, and both inverse
+laws, which are the groupoid laws of the identity type in the sense of
+Hofmann and Streicher \cite{HofmannStreicher1998}. Functorial action on paths
+is obtained by induction, and homotopies are dependent products of pointwise
+identity types.
+
+A contractible type packages a center and a path from that center to every
+point. Fibers are dependent pairs of preimages and image paths, and a
+contractible map has a contraction in every fiber. Left and right inverse data
+are kept independent; their product is bi-invertibility. An equivalence is a
+function equipped with such a witness.
+
+The development proves both directions of the standard characterization. From
+contractible fibers it selects each fiber center as an inverse image; applying
+the first projection to the fiber contraction yields the left-inverse
+homotopy. Conversely, independent left and right inverses are combined into a
+single quasi-inverse and upgraded to coherent half-adjoint data. The triangle
+identity then supplies the dependent second-component path needed to contract
+each fiber. This proof derives functorial laws for \texttt{ap}, path
+whiskering and cancellation, homotopy naturality, and paths of dependent pairs.
+No new primitive rule is introduced for the characterization.
+
+The identity function is proved bi-invertible using reflexive homotopies. For
+composition, the selected left inverses and selected right inverses are
+composed separately. Their new inverse homotopies apply the outer inverse or
+map to an existing pointwise path and then concatenate with the remaining
+inverse path. Thus closure of equivalences under composition is derived rather
+than postulated.
+
+Inversion is derived from the same quasi-inverse construction. Reading the
+retraction and section homotopies of a bi-invertible \(f\) from the other side
+exhibits \(f\) itself as both a left and a right inverse of the selected
+inverse \(g\), so \(g\) is bi-invertible. A general constructor turns any
+quasi-inverse triple into a bi-invertibility witness, which is the counterpart
+of the projection lemmas that read the inverse map and inverse homotopy out of
+an existing witness. Identity, inversion, and composition together make type
+equivalence reflexive, symmetric, and transitive, each witnessed by an explicit
+object-language term rather than by a meta-level assertion. Combining inversion
+with the preservation result also transfers contractibility backwards along an
+equivalence, so contractibility is invariant in both directions.
+
+\section{Extensional principles}
+
+For two dependent functions, \texttt{happly} sends a path of functions to the
+pointwise homotopy by path induction. Function extensionality is the additional
+axiom that this canonical map is bi-invertible. The exported \texttt{funext}
+term is selected from the left inverse supplied by that witness.
+
+For types \(A,B\) in a universe, \texttt{idtoequiv} sends a universe path to an
+equivalence by path induction, with the identity equivalence as its reflexivity
+case. Univalence is the additional axiom that this canonical map is
+bi-invertible. The function-extensionality and univalence theories both import
+the intensional equivalence layer directly; neither optional axiom is hidden in
+the earlier theories.
+
+\section{Trust boundary}
+
+The typing judgment, universe hierarchy, primitive type formers, eliminators,
+and their computation equations are axiomatized in Isabelle/Pure. Isabelle
+checks every derived theorem relative to those axioms. Function extensionality
+and univalence extend that boundary only in their respective final theories.
+There is no custom Isabelle/ML proof automation and no oracle. Irreflexivity of
+the universe-level relation is encoded in Pure's ex-falso form: a hypothetical
+self-relation derives an arbitrary Pure proposition. That premise is impossible
+in the intended model, which reads levels as natural numbers, \(\prec_l\) as
+the strict order, and the successor as \(+1\); every level axiom holds there,
+no self-relation does, and the axiom is used only to derive level asymmetry.
+
+The entry does not prove normalization, canonicity, consistency, decidability
+of type checking, or a semantic model such as the simplicial
+\cite{KapulkinLumsdaine2021} or cubical \cite{BezemCoquandHuber2014} models of
+univalent foundations. It also does not include higher inductive types, cubical
+computation, a general inductive-definition package, or automatic universe
+inference.
+
+\section{Theory structure}
+
+{\sloppy
+\begin{itemize}
+\item \texttt{HoTT\_Base} introduces expressions, typing, and cumulative
+  universes.
+\item \texttt{HoTT\_Type\_Formers} introduces dependent products and sums,
+  empty and unit types, and natural numbers.
+\item \texttt{HoTT\_Identity} derives transport and path algebra from path
+  induction.
+\item \texttt{HoTT\_Equivalence} develops contractibility, bi-invertibility,
+  the identity equivalence, and composition of equivalences.
+\item \texttt{HoTT\_Equivalence\_Characterization} proves the bidirectional
+  contractible-fiber criterion and that equivalences preserve contractibility.
+\item \texttt{HoTT\_Equivalence\_Inverse} inverts equivalences and collects the
+  reflexivity, symmetry, and transitivity witnesses.
+\item \texttt{HoTT\_Function\_Extensionality} adds function extensionality as
+  an optional axiom.
+\item \texttt{HoTT\_Univalence} adds univalence as an optional axiom.
+\end{itemize}
+}
+
+Both extensional principles live in separate final theories, so their
+additional assumptions remain visible.
+
+\section{Artifact and reproducibility}
+
+The artifact targets Isabelle2025-2 and the session
+\texttt{HoTT\_Object\_Logic}. It contains eight top-level theory files and no
+Isabelle/ML source. A proof-only build is:
+
+{\small
+\begin{verbatim}
+.\tools\build.ps1 -Project hott-object-logic-isabelle -NoDocument
+\end{verbatim}
+}
+
+A clean proof and document build, followed by the AFP-style source audit, is:
+
+{\small
+\begin{verbatim}
+.\tools\build.ps1 -Project hott-object-logic-isabelle -Clean
+.\tools\audit.ps1 -Project hott-object-logic-isabelle
+\end{verbatim}
+}
+
+The equivalent portable invocation is
+\texttt{isabelle build -c -D <entry directory> HoTT\_Object\_Logic}.
+
+The final audit records the exact source-line and theorem counts and checks for
+\texttt{sorry}, \texttt{oops}, missing AFP files, and generated artifacts. For
+this revision it reports eight theories, 132 object-logic statements, twelve
+headline theorems, 7,609 theory-source lines, no forbidden proof tokens, and no
+findings. Every proof is structured Isar: the entry contains no \texttt{apply}
+script, no \texttt{back} or \texttt{apply\_end}, no diagnostic or
+counterexample command, no \texttt{smt} invocation, no unnamed statement
+carrying a global attribute, and no use of quick-and-dirty mode. A clean
+AFP-style proof and PDF build takes well under a minute on a contemporary
+laptop; build times are machine-dependent.
+
+\input{session}
+
+\bibliographystyle{abbrv}
+\bibliography{root}
+
+\end{document}

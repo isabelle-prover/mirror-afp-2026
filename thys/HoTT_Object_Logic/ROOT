@@ -1,0 +1,20 @@
+chapter AFP
+
+session HoTT_Object_Logic = Pure +
+  description \<open>
+    A minimal, independently authored Homotopy Type Theory object logic for
+    Isabelle/Pure with an explicit trust boundary.
+  \<close>
+  options [timeout = 600, document = pdf]
+  theories
+    HoTT_Base
+    HoTT_Type_Formers
+    HoTT_Identity
+    HoTT_Equivalence
+    HoTT_Equivalence_Characterization
+    HoTT_Equivalence_Inverse
+    HoTT_Function_Extensionality
+    HoTT_Univalence
+  document_files
+    "root.tex"
+    "root.bib"
