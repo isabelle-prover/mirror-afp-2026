@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://isa-afp.org/entries/index.json</loc>
-    <lastmod>2026-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://isa-afp.org/</loc>
-    <lastmod>2026-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://isa-afp.org/entries/Algebra_Towers.html</loc>
+    <lastmod>2026-10-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://isa-afp.org/entries/Unsolvable_Quintic.html</loc>
     <lastmod>2026-10-28T00:00:00+00:00</lastmod>
@@ -3494,6 +3497,26 @@
     <loc>https://isa-afp.org/authors/maximova/</loc>
   </url><url>
     <loc>https://isa-afp.org/authors/burrieza/</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Algebra_Towers/Algebra_Norm.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Algebra_Towers/Algebra_Towers.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Algebra_Towers/Algebra_Towers_Examples.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Algebra_Towers/Algebra_Trace.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Algebra_Towers/Compatible_Scalar_Actions.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Algebra_Towers/Finite_Dimensional_Towers.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Algebra_Towers/Regular_Representation.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Algebra_Towers/Restriction_of_Scalars.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Algebra_Towers/Scalar_Restriction_Bridge.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Algebra_Towers/Tower_Bases.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/Algebraic_Numbers/Algebraic_Number_Tests.html</loc>
   </url><url>

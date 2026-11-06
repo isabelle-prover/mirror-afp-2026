@@ -1,0 +1,37 @@
+title = "Finite-Dimensional Algebras and Scalar Towers"
+date = 2026-10-30
+topics = [
+  "Mathematics/Algebra",
+]
+abstract = "This entry develops an explicit-action API for compatible scalar towers \\(R \\longrightarrow S \\longrightarrow A\\). It provides restriction of scalars, composition of bases, multiplication of finite dimensions, regular representations, and algebra trace and norm. The final tower laws identify trace and norm over the bottom field with the iterated trace and norm through the intermediate field. Concrete examples treat \\(\\mathbb{F}_2 \\subseteq \\mathbb{F}_4\\) and \\(\\mathbb{R} \\subseteq \\mathbb{C}\\). The development follows the standard finite-extension treatment in Lang."
+license = "bsd"
+note = ""
+creation_note = "AI assistance was used for proof engineering."
+
+[authors]
+
+[authors.ramos]
+email = "ramos_email"
+
+[authors.hulak]
+email = "hulak_email"
+
+[authors.queiroz]
+email = "queiroz_email"
+
+[contributors]
+
+[notify]
+ramos = "ramos_email"
+hulak = "hulak_email"
+queiroz = "queiroz_email"
+
+[history]
+
+[extra]
+
+[related]
+dois = [
+  "10.1007/978-1-4613-0041-0",
+]
+pubs = []

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finite-Dimensional Algebras and Scalar Towers - Archive of Formal Proofs</title>
+    <meta name="description" content="Finite-Dimensional Algebras and Scalar Towers in the Archive of Formal Proofs">
+    <meta property="og:description" content="Finite-Dimensional Algebras and Scalar Towers in the Archive of Formal Proofs">
+    <meta property="og:title" content="Finite-Dimensional Algebras and Scalar Towers">
+    <meta property="og:url" content="https://isa-afp.org/entries/Algebra_Towers.html">
+    <meta property="og:image" content="https://isa-afp.org/images/afp.png">
+    <meta property="og:type" content="article">
+  <link rel="stylesheet" type="text/css" href="../css/front.min.css">
+  <link rel="icon" href="../images/favicon.ico" type="image/icon">
+    
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [["$", "$"], ["\\(", "\\)"]]
+        },
+        processEscapes: true,
+        svg: {
+          fontCache: "global"
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="../js/mathjax/es5/tex-mml-chtml.js">
+    </script>
+
+  <script src="../js/library.js"></script>
+  <script src="../js/flexsearch.bundle.js"></script>
+  <script src="../js/search-autocomplete.js"></script>
+    <script src="../js/obfuscate.js"></script>
+    <script src="../js/entries.js"></script>
+</head>
+
+  <body class="mathjax_ignore">
+    <aside><div id="menu-toggle">
+  <input id="toggle" type="checkbox">
+  <label for="toggle">
+    <span>menu</span>
+    <img src="../images/menu.svg" alt="Menu">
+  </label>
+  <a href="../" class="logo-link">
+    <img src="../images/afp.png" alt="Logo of the Archive of Formal Proofs" class="logo">
+  </a>
+  <nav id="menu">
+    <div>
+      <a href="../" class="logo-link">
+        <img src="../images/afp.png" alt="Logo of the Archive of Formal Proofs" class="logo">
+      </a>
+      <ul>
+          <li >
+            <a href="../">Home</a>
+          </li>
+          <li >
+            <a href="../topics/">Topics</a>
+          </li>
+          <li >
+            <a href="../download/">Download</a>
+          </li>
+          <li >
+            <a href="../help/">Help</a>
+          </li>
+          <li >
+            <a href="../submission/">Submission</a>
+          </li>
+          <li >
+            <a href="../statistics/">Statistics</a>
+          </li>
+          <li >
+            <a href="../about/">About</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+    </aside>
+
+    <div class="content entries"><header>
+    <form autocomplete="off" action="../search/">
+      <div class="form-container">
+        <input id="search-input" name="s" type="search" size="31" maxlength="255" value=""
+               aria-label="Search the AFP" list="autocomplete"><button id="search-button" type="submit">
+          <img src="../images/search.svg" alt="Search">
+        </button>
+        <datalist id="autocomplete"></datalist>
+      </div>
+    </form>
+  <h1>
+    <span class='first'>F</span>inite-<span class='first'>D</span>imensional <span class='first'>A</span>lgebras and <span class='first'>S</span>calar <span class='first'>T</span>owers
+  </h1>
+  <div>
+      <p><a href="../authors/ramos/">Arthur Freitas Ramos</a> <a class="obfuscated" data="eyJ1c2VyIjpbImFyZnJlaXRhIl0sImhvc3QiOlsibWljcm9zb2Z0IiwiY29tIl19">📧</a>, <a href="../authors/hulak/">David Barros Hulak</a> <a class="obfuscated" data="eyJ1c2VyIjpbImRiaHVsYWsiXSwiaG9zdCI6WyJnbWFpbCIsImNvbSJdfQ==">📧</a> and <a href="../authors/queiroz/">Ruy Jose Guerra Barretto de Queiroz</a> <a class="obfuscated" data="eyJ1c2VyIjpbInJ1eSJdLCJob3N0IjpbImNpbiIsInVmcGUiLCJiciJdfQ==">📧</a>
+      </p>
+      <p class="date">October 30, 2026</p>
+  </div>
+</header>
+      <div>
+  <main>
+
+    <h3>Abstract</h3>
+    <div class="abstract mathjax_process">This entry develops an explicit-action API for compatible scalar towers \(R \longrightarrow S \longrightarrow A\). It provides restriction of scalars, composition of bases, multiplication of finite dimensions, regular representations, and algebra trace and norm. The final tower laws identify trace and norm over the bottom field with the iterated trace and norm through the intermediate field. Concrete examples treat \(\mathbb{F}_2 \subseteq \mathbb{F}_4\) and \(\mathbb{R} \subseteq \mathbb{C}\). The development follows the standard finite-extension treatment in Lang.</div>
+
+    <h3>License</h3>
+    <div>
+        <a href="https://isa-afp.org/LICENSE">BSD License</a>
+    </div>
+      <h3>Note</h3>
+      <p><em>AI assistance was used for proof engineering.</em></p>
+      <h3>Topics</h3>
+      <ul>
+          <li><a href="../topics/mathematics/algebra/">Mathematics/Algebra</a></li>
+      </ul>
+      <h3>Related publications</h3>
+      <ul>
+        <li>Lang, S. (2002). Algebra. In (Editor), Graduate Texts in Mathematics. Springer New York. <a href="https://doi.org/10.1007/978-1-4613-0041-0">https://doi.org/10.1007/978-1-4613-0041-0</a>
+</li>
+      </ul>
+      <h3>Session Algebra_Towers</h3>
+      <ul>
+          <li><a href="../thys/Algebra_Towers/Scalar_Restriction_Bridge.html">Scalar_Restriction_Bridge</a></li>
+          <li><a href="../thys/Algebra_Towers/Compatible_Scalar_Actions.html">Compatible_Scalar_Actions</a></li>
+          <li><a href="../thys/Algebra_Towers/Algebra_Towers.html">Algebra_Towers</a></li>
+          <li><a href="../thys/Algebra_Towers/Restriction_of_Scalars.html">Restriction_of_Scalars</a></li>
+          <li><a href="../thys/Algebra_Towers/Tower_Bases.html">Tower_Bases</a></li>
+          <li><a href="../thys/Algebra_Towers/Finite_Dimensional_Towers.html">Finite_Dimensional_Towers</a></li>
+          <li><a href="../thys/Algebra_Towers/Regular_Representation.html">Regular_Representation</a></li>
+          <li><a href="../thys/Algebra_Towers/Algebra_Trace.html">Algebra_Trace</a></li>
+          <li><a href="../thys/Algebra_Towers/Algebra_Norm.html">Algebra_Norm</a></li>
+          <li><a href="../thys/Algebra_Towers/Algebra_Towers_Examples.html">Algebra_Towers_Examples</a></li>
+      </ul>
+
+    <div class="flex-wrap">
+    </div>
+  </main>
+
+  <nav class="links">
+    <a class="popup-button" href="#cite-popup">Cite</a>
+    <a class="popup-button" href="#download-popup">Download</a>
+    <h4>PDFs</h4>
+    <a href="https://isa-afp.org/browser_info/current/AFP/Algebra_Towers/outline.pdf">Proof outline</a>
+    <a href="https://isa-afp.org/browser_info/current/AFP/Algebra_Towers/document.pdf">Proof document</a>
+    <a href="https://isa-afp.org/browser_info/current/AFP/Algebra_Towers/session_graph.pdf">Dependencies</a>
+  </nav>
+
+  <div id="cite-popup" class="overlay">
+    <a class="cancel" href="#"></a>
+    <div class="popup">
+      <h2>Cite</h2>
+      <a class="close" href="#">&times;</a>
+      <div>
+        <p style="display:none;" id="bibtex-filename">Algebra_Towers-AFP</p>
+        <pre id="copy-text">@article{Algebra_Towers-AFP,
+  author  = {Arthur Freitas Ramos and David Barros Hulak and Ruy Jose Guerra Barretto de Queiroz},
+  title   = {Finite-Dimensional Algebras and Scalar Towers},
+  journal = {Archive of Formal Proofs},
+  month   = {October},
+  year    = {2026},
+  note    = {\url{https://isa-afp.org/entries/Algebra_Towers.html},
+             Formal proof development},
+  ISSN    = {2150-914x},
+}</pre>
+        <button id="copy-bibtex">Copy</button> <a id="download-bibtex">Download</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="download-popup" class="overlay">
+    <a class="cancel" href="#"></a>
+    <div class="popup">
+      <h2>Download</h2>
+      <a class="close" href="#">&times;</a>
+      <a href="https://isa-afp.org/release/afp-Algebra_Towers-current.tar.gz" download>
+        Download latest</a>
+    </div>
+  </div>
+      </div>
+    </div>
+  </body>
+</html>
