@@ -95,6 +95,9 @@
     <loc>https://isa-afp.org/entries/Simson.html</loc>
     <lastmod>2026-08-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://isa-afp.org/entries/HoTT_Object_Logic.html</loc>
+    <lastmod>2026-07-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://isa-afp.org/entries/Dinitz_Garg_Goemans_Counterexample.html</loc>
     <lastmod>2026-07-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -14769,6 +14772,22 @@
     <loc>https://isa-afp.org/thys/HotelKeyCards/State.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/HotelKeyCards/Trace.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_Object_Logic/HoTT_Base.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_Object_Logic/HoTT_Equivalence.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_Object_Logic/HoTT_Equivalence_Characterization.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_Object_Logic/HoTT_Equivalence_Inverse.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_Object_Logic/HoTT_Function_Extensionality.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_Object_Logic/HoTT_Identity.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_Object_Logic/HoTT_Type_Formers.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_Object_Logic/HoTT_Univalence.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/HRB-Slicing/AuxLemmas.html</loc>
   </url><url>

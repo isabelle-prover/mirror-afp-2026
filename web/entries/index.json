@@ -705,6 +705,29 @@
   "year": "2026"
  },
  {
+  "abstract": "This entry presents an independently authored higher-order abstract syntax encoding of intensional Martin-L\u0026ouml;f type theory and a core homotopy type theory library in Isabelle/Pure. The primitive object-logic rules are explicit axioms, so the complete trusted boundary is visible in ordinary Isabelle theory files.  Derived results cover identity-path algebra, transport, homotopies, contractibility, fibers, bi-invertibility, and the identity, inverse, and composite equivalences, so type equivalence is proved reflexive, symmetric, and transitive. The main characterization proves that a map is bi-invertible if and only if all of its fibers are contractible; contractibility is also shown to transfer along an equivalence in both directions. Function extensionality and univalence are isolated in separate final theories as optional additional axioms, each stated as bi-invertibility of its canonical map.  The entry deliberately has a small, automation-free implementation surface. It does not prove normalization, canonicity, consistency, decidability of type checking, or a semantic model, and it does not include higher inductive types, cubical computation, or automatic universe inference.",
+  "authors": [
+   "Arthur Freitas Ramos",
+   "David Barros Hulak",
+   "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "date": "2026-07-24",
+  "link": "../entries/HoTT_Object_Logic.html",
+  "permalink": "https://isa-afp.org/entries/HoTT_Object_Logic.html",
+  "related": [],
+  "shortname": "HoTT_Object_Logic",
+  "title": "A Minimal Homotopy Type Theory Object Logic for Isabelle/Pure",
+  "topic_links": [
+   "../topics/logic/general-logic/mechanization-of-proofs/",
+   "../topics/computer-science/programming-languages/type-systems/"
+  ],
+  "topics": [
+   "Logic/General logic/Mechanization of proofs",
+   "Computer science/Programming languages/Type systems"
+  ],
+  "year": "2026"
+ },
+ {
   "abstract": "Dinitz, Garg, and Goemans proved that a feasible fractional single-source flow can be rounded to an unsplittable flow with additive congestion bounded by the largest demand. Goemans conjectured that the rounding can simultaneously preserve cost. This entry verifies the finite counterexample announced by Dmitry Rybin in July 2026. It defines a generic finite path-flow model and realizes the displayed instance as a directed graph with seven vertices, nine arcs, and three terminal demands. Isabelle classifies every source-to-terminal path and checks a feasible fractional flow of cost \\(58\\) that saturates every arc. The maximum demand is \\(15\\). Any unsplittable routing whose load on every arc is at most the fractional load plus \\(15\\) must choose at least two positive-cost routes, each costing \\(30\\), and therefore costs at least \\(60\\). Consequently no cost-preserving rounding exists, even under the weaker non-strict congestion bound.",
   "authors": [
    "Arthur Freitas Ramos",

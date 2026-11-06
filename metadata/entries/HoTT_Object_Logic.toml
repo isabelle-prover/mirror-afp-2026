@@ -1,0 +1,44 @@
+title = "A Minimal Homotopy Type Theory Object Logic for Isabelle/Pure"
+date = 2026-07-24
+topics = [
+  "Logic/General logic/Mechanization of proofs",
+  "Computer science/Programming languages/Type systems",
+]
+abstract = """
+This entry presents an independently authored higher-order abstract syntax encoding of intensional Martin-L&ouml;f type theory and a core homotopy type theory library in Isabelle/Pure. The primitive object-logic rules are explicit axioms, so the complete trusted boundary is visible in ordinary Isabelle theory files.
+
+Derived results cover identity-path algebra, transport, homotopies, contractibility, fibers, bi-invertibility, and the identity, inverse, and composite equivalences, so type equivalence is proved reflexive, symmetric, and transitive. The main characterization proves that a map is bi-invertible if and only if all of its fibers are contractible; contractibility is also shown to transfer along an equivalence in both directions. Function extensionality and univalence are isolated in separate final theories as optional additional axioms, each stated as bi-invertibility of its canonical map.
+
+The entry deliberately has a small, automation-free implementation surface. It does not prove normalization, canonicity, consistency, decidability of type checking, or a semantic model, and it does not include higher inductive types, cubical computation, or automatic universe inference."""
+license = "bsd"
+note = ""
+creation_note = """
+AI assistance was used for proof engineering. The final definitions, statements, and proofs are checked by Isabelle.
+
+
+
+"""
+
+[authors]
+
+[authors.ramos]
+email = "ramos_email"
+
+[authors.hulak]
+email = "hulak_email"
+
+[authors.queiroz]
+email = "queiroz_email"
+
+[contributors]
+
+[notify]
+ramos = "ramos_email"
+
+[history]
+
+[extra]
+
+[related]
+dois = []
+pubs = []
