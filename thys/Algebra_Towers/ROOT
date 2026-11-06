@@ -1,0 +1,20 @@
+chapter AFP
+
+session Algebra_Towers = "HOL-Analysis" +
+  options [document = pdf, timeout = 600]
+  sessions
+    "HOL-New_Algebra"
+  theories
+    Scalar_Restriction_Bridge
+    Compatible_Scalar_Actions
+    Algebra_Towers
+    Restriction_of_Scalars
+    Tower_Bases
+    Finite_Dimensional_Towers
+    Regular_Representation
+    Algebra_Trace
+    Algebra_Norm
+    Algebra_Towers_Examples
+  document_files
+    "root.tex"
+    "root.bib"
