@@ -836,6 +836,15 @@
  },
  {
   "emails": [
+   "eyJ1c2VyIjpbImthcmxlc21hcmluIl0sImhvc3QiOlsiZ21haWwiLCJjb20iXX0="
+  ],
+  "homepages": [],
+  "id": "marin",
+  "link": "../authors/marin/",
+  "name": "Carles Marín"
+ },
+ {
+  "emails": [
    "eyJ1c2VyIjpbImNhcm9saW5lIiwibGVta2UiXSwiaG9zdCI6WyJ1bmktb2xkZW5idXJnIiwiZGUiXX0="
   ],
   "homepages": [],

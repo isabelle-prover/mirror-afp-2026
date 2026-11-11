@@ -1,0 +1,27 @@
+title = "Chvátal's Theorem on the Ramsey Number of a Triangle versus a Tree"
+date = 2026-11-06
+topics = [
+  "Mathematics/Combinatorics",
+]
+abstract = "We formalize Chvátal's theorem (1977): for every tree T with n vertices, the graph Ramsey number R(K_3, T) equals 2n - 1. The upper bound is proved by induction on n, removing a leaf; the lower bound is the complete bipartite graph with two parts of size n - 1. As a corollary, every connected graph with n vertices and at most n - 1 edges, being a tree, has the same Ramsey number. Graphs, cliques and Ramsey numbers are those of the entry Ramsey_Bounds, and trees those of the entry Tree_Enumeration."
+license = "bsd"
+note = ""
+creation_note = "The Isabelle proofs and the text of the document were developed with the assistance of generative AI systems; the author checked them."
+
+[authors]
+
+[authors.marin]
+email = "marin_email"
+
+[contributors]
+
+[notify]
+marin = "marin_email"
+
+[history]
+
+[extra]
+
+[related]
+dois = []
+pubs = []

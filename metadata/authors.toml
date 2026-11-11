@@ -5188,6 +5188,22 @@ host = [
 [maricf.homepages]
 maricf_homepage = "http://www.matf.bg.ac.rs/~filip"
 
+[marin]
+name = "Carles Marín"
+
+[marin.emails]
+
+[marin.emails.marin_email]
+user = [
+  "karlesmarin",
+]
+host = [
+  "gmail",
+  "com",
+]
+
+[marin.homepages]
+
 [markovic]
 name = "Jelena Markovic"
 orcid = "0009-0007-4797-2666"

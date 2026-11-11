@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://isa-afp.org/entries/index.json</loc>
-    <lastmod>2026-10-30T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://isa-afp.org/</loc>
-    <lastmod>2026-10-30T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://isa-afp.org/entries/Chvatal_Tree_Ramsey.html</loc>
+    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://isa-afp.org/entries/Algebra_Towers.html</loc>
     <lastmod>2026-10-30T00:00:00+00:00</lastmod>
@@ -6093,6 +6096,8 @@
   </url><url>
     <loc>https://isa-afp.org/thys/Cardinality_Continuum/Cardinality_Euclidean_Space.html</loc>
   </url><url>
+    <loc>https://isa-afp.org/authors/marin/</loc>
+  </url><url>
     <loc>https://isa-afp.org/authors/lemke/</loc>
   </url><url>
     <loc>https://isa-afp.org/authors/lameris/</loc>
@@ -6456,6 +6461,8 @@
     <loc>https://isa-afp.org/authors/traut/</loc>
   </url><url>
     <loc>https://isa-afp.org/authors/wu/</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Chvatal_Tree_Ramsey/Chvatal_Tree_Ramsey.html</loc>
   </url><url>
     <loc>https://isa-afp.org/authors/giusto/</loc>
   </url><url>

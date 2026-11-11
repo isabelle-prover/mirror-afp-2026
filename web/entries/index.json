@@ -1,5 +1,24 @@
 [
  {
+  "abstract": "We formalize Chvátal's theorem (1977): for every tree T with n vertices, the graph Ramsey number R(K_3, T) equals 2n - 1. The upper bound is proved by induction on n, removing a leaf; the lower bound is the complete bipartite graph with two parts of size n - 1. As a corollary, every connected graph with n vertices and at most n - 1 edges, being a tree, has the same Ramsey number. Graphs, cliques and Ramsey numbers are those of the entry Ramsey_Bounds, and trees those of the entry Tree_Enumeration.",
+  "authors": [
+   "Carles Marín"
+  ],
+  "date": "2026-11-06",
+  "link": "../entries/Chvatal_Tree_Ramsey.html",
+  "permalink": "https://isa-afp.org/entries/Chvatal_Tree_Ramsey.html",
+  "related": [],
+  "shortname": "Chvatal_Tree_Ramsey",
+  "title": "Chvátal's Theorem on the Ramsey Number of a Triangle versus a Tree",
+  "topic_links": [
+   "../topics/mathematics/combinatorics/"
+  ],
+  "topics": [
+   "Mathematics/Combinatorics"
+  ],
+  "year": "2026"
+ },
+ {
   "abstract": "This entry develops an explicit-action API for compatible scalar towers \\(R \\longrightarrow S \\longrightarrow A\\). It provides restriction of scalars, composition of bases, multiplication of finite dimensions, regular representations, and algebra trace and norm. The final tower laws identify trace and norm over the bottom field with the iterated trace and norm through the intermediate field. Concrete examples treat \\(\\mathbb{F}_2 \\subseteq \\mathbb{F}_4\\) and \\(\\mathbb{R} \\subseteq \\mathbb{C}\\). The development follows the standard finite-extension treatment in Lang.",
   "authors": [
    "Arthur Freitas Ramos",
