@@ -1,0 +1,31 @@
+chapter AFP
+
+session HoTT_HIT_Metatheory (AFP) = HOL +
+  description \<open>
+    Stand-alone structural metatheory for finitary one-dimensional
+    nondependent higher inductive type signatures: dimension support,
+    well-formed and typed endpoints, finite open-term boundary checking with a
+    soundness theorem for all typed instances, canonical normal-form comparison
+    for typed joinability, a boundary-computation square, term and dimension
+    substitution, hereditary safety, strong normalization, Church--Rosser
+    confluence, unique normal forms, canonicity, and empty-signature consistency.
+  \<close>
+  options [timeout = 1800, document = pdf]
+  theories
+    HIT_Syntax
+    HIT_Reduction
+    HIT_Typing
+    HIT_Signature
+    HIT_Dimensions
+    HIT_Coherence
+    HIT_Substitution
+    HIT_Preservation
+    HIT_Canonicity
+    HIT_Normalization
+    HIT_Confluence
+    HIT_Canonical_Normal_Forms
+    HIT_Open_Boundary_Check
+    HIT_Examples
+  document_files
+    "root.tex"
+    "root.bib"

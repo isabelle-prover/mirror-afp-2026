@@ -1,0 +1,150 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{isabelle,isabellesym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+
+\isabellestyle{it}
+
+\begin{document}
+
+\title{Structural Metatheory for Finitary One-Dimensional Higher Inductive Types}
+\author{Arthur Freitas Ramos \and David Barros Hulak \and
+  Ruy J. G. B. de Queiroz}
+\maketitle
+
+\begin{abstract}
+This stand-alone entry develops the structural metatheory of a finitary,
+one-dimensional, nondependent calculus of higher inductive types directly in
+Isabelle/HOL. It has no dependency on a homotopy type theory object logic. Its
+terms, raw typing, and reduction are inductive, and its signature environment
+uniformly describes ordinary inductive types and higher inductive types.
+
+A signature uniformly declares finite lists of point and path constructors.
+Each endpoint expression is checked against constructor arities and argument
+types, and instantiating a checked endpoint is proved to preserve typing.
+Free dimension support is defined structurally and proved to be bounded by the
+ambient dimension context; substitution at a fresh dimension is therefore the
+identity on every well-typed term.
+Path constructors are \emph{cubical-style}: a constructor takes a dimension
+argument, its faces are obtained by substituting the two constant dimensions,
+and its eliminator computes judgmentally. A path method is accepted only when
+both typed faces are joinable with the eliminations of the corresponding
+declared endpoints, and hence convertible to them. Structural elimination of 
+a checked endpoint is proved
+well typed. The resulting boundary-computation square states that eliminating
+either declared face is convertible to taking the same face of the path method
+after computation. This prevents the interval counterexample in which a
+constant segment method disagrees with one of the point methods.
+
+Boundary admissibility is no longer left only as a quantification over every
+context and every typed constructor instance. A finite open-term criterion
+checks the two faces of each path method once, under canonical variables
+appended for that constructor's arguments. A soundness theorem for simultaneous
+substitution transports these finitely many open obligations to all typed
+instances. Strong normalization and confluence are also packaged as a canonical
+normal-form function, and typed joinability is proved equivalent to equality of
+canonical normal forms. Consequently, the finite boundary criterion has an
+equivalent normal-form formulation. The canonical function uses Hilbert choice,
+so this is a theorem-level comparison criterion rather than an executable
+normalizer. Separately, the hereditary checked judgment remains explicitly a
+semantic safety invariant: every reduct must satisfy the local structural
+predicate.
+
+The structural metatheory proves dimension-context weakening, de Bruijn
+weakening, capture-avoiding term substitution, dimension substitution, and
+one-step and multi-step preservation of raw typing and hereditary safety.
+Every raw well-typed term is strongly normalizing. Local confluence on regular
+terms, together with typing regularity and strong normalization, yields
+Church--Rosser confluence and unique normal forms. Closed checked terms
+therefore reach canonical normal forms; at higher inductive type these are
+point constructors with canonical arguments. A signature with no point
+constructors has no closed checked inhabitant.
+\end{abstract}
+
+\tableofcontents
+
+\section{Scope}
+
+The calculus has two type formers, function spaces and higher inductive types
+drawn from the signature environment. Constructor arguments are either
+parameters of fixed higher inductive type or recursive occurrences. The schema
+covers the circle, interval, suspensions, and the indiscrete paths of
+propositional truncation. It does not express general quotients by a relation
+family whose witness type depends on earlier arguments.
+
+Infinitary constructors, dependent constructor arguments, indexed families,
+dependent eliminators, higher path constructors, dimension abstraction,
+composition, and Kan operations are outside the scope. Thus ``cubical-style''
+describes the dimension-indexed path syntax and judgmental path computation;
+this is not a formalization of cubical type theory. The metatheory does prove
+strong normalization and Church--Rosser confluence for its stated finitary,
+one-dimensional, nondependent calculus; it does not claim those results for
+the richer systems excluded above.
+
+\section{Related work and position}
+
+{\sloppy
+The general shape of the schema follows the informal descriptions of higher
+inductive definitions in the Homotopy Type Theory book \cite{HoTTBook2013} and
+the schemata studied by Lumsdaine and Shulman \cite{LumsdaineShulman2020} and
+by Sojakova \cite{Sojakova2015}. Kaposi and Kov\'acs give a substantially more
+expressive theory of signatures for higher inductive-inductive types, formalize
+its syntactic translations in Agda, and generate induction principles
+\cite{KaposiKovacs2020}. The present calculus is narrower---nondependent,
+one-sorted at each signature index, and one-dimensional---but proves an
+operational metatheory not supplied by that signature translation: explicit
+reduction, subject reduction, strong normalization, Church--Rosser, unique
+normal forms, and consistency.
+
+The closest Isabelle-specific precedent is Chen's Isabelle/HoTT
+\cite{Chen2021}, the first implementation of homotopy type theory in Isabelle.
+It uses Isabelle's logical-framework infrastructure for intensional dependent
+type theory, type checking, elaboration, Isar proofs, and foundational HoTT
+results. Individual higher inductive constants and rules can be postulated in
+such an object logic, but Isabelle/HoTT does not supply a uniform HIT signature
+schema, an open boundary-admissibility criterion, or the operational
+metatheory proved here. This entry instead reifies its calculus as datatypes and
+relations in a stand-alone Isabelle/HOL session.
+
+Veltri and van der Weide define internal signatures for finitary 1-truncated
+higher inductive types and construct their algebras from groupoid quotients in
+UniMath \cite{VeltriVanDerWeide2021}. Their result is an internal semantic
+construction with initial-algebra content. This entry instead studies an
+external first-order term calculus and verifies its operational properties in
+Isabelle; it neither constructs semantic models nor claims the expressive
+generality of their signatures.
+
+The judgmental treatment of path constructors is inspired by cubical type
+theory \cite{CohenCoquandHuberMoertberg2018}. Cavallo and Harper provide a
+general indexed cubical inductive schema with computational higher inductive
+types and canonicity \cite{CavalloHarper2019}; Huber proves canonicity for
+cubical type theory \cite{Huber2019}; and Sterling and Angiuli prove
+normalization and decidability of judgmental equality for Cartesian cubical
+type theory \cite{SterlingAngiuli2021}. In contrast, the present system has no
+composition, Kan operations, dimension abstraction, indexed families, or
+higher path constructors. Its distinct contribution is a compact
+one-dimensional operational calculus with explicit boundary-coherence and
+dimension-capture analyses, together with machine-checked strong normalization
+and Church--Rosser proofs.
+\par}
+
+Dimension variables are natural numbers, and the index~$0$ is reserved for the
+dimension bound by the path methods of an eliminator. Ambient dimension
+contexts therefore consist of strictly positive indices, and dimension
+substitution never has to shift.
+
+\section{The formal development}
+
+\input{session}
+
+\section{AI assistance}
+
+AI assistance was used for proof engineering. The final definitions,
+statements, and proofs are checked by Isabelle.
+
+\bibliographystyle{abbrv}
+\bibliography{root}
+
+\end{document}
