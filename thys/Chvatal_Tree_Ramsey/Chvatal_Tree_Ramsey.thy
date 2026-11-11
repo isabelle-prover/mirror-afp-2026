@@ -318,9 +318,10 @@ lemma is_triangle_tree_RN_edge_iff:
   unfolding is_triangle_tree_RN_def is_clique_RN_def compl_copy_edge_iff[OF assms] ex_clique_indep_iff
   by simp
 
+text \<open>The rhs is (of course) equal to 3\<close>
 corollary triangle_tree_RN_edge:
   assumes "u \<noteq> v"
-  shows "triangle_tree_RN {u, v} {{u, v}} = 3"
+  shows "triangle_tree_RN {u, v} {{u, v}} = RN 3 2"
   using chvatal[OF tree2] assms by force
 
 end
