@@ -4,6 +4,15 @@
     <title>Logic/Proof theory</title>
     <link>https://isa-afp.org/topics/logic/proof-theory/</link>
     <description>AFP entries in Proof theory</description><item>
+  <title>Structural Metatheory for Finitary One-Dimensional Higher Inductive Types</title>
+  <link>https://isa-afp.org/entries/HoTT_HIT_Metatheory.html</link>
+  <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+  <description>Structural Metatheory for Finitary One-Dimensional Higher Inductive Types in the AFP</description>
+    <category>Computer science/Programming languages/Type systems</category>
+    <category>Computer science/Semantics and reasoning</category>
+    <category>Logic/Proof theory</category>
+</item>
+<item>
   <title>A Reusable Isabelle/HOL Framework for Propositional Labelled Natural Deduction</title>
   <link>https://isa-afp.org/entries/Gabbay_Labelled_Natural_Deduction.html</link>
   <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>

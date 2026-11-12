@@ -1,0 +1,55 @@
+title = "Structural Metatheory for Finitary One-Dimensional Higher Inductive Types"
+date = 2026-07-27
+topics = [
+  "Computer science/Programming languages/Type systems",
+  "Computer science/Semantics and reasoning",
+  "Logic/Proof theory",
+]
+abstract = """
+<p>This entry develops the structural metatheory of a finitary, one-dimensional, nondependent calculus of higher inductive types directly in Isabelle/HOL. Its inductive syntax, raw typing relation, reduction relation, and signature environment uniformly describe ordinary inductive types and higher inductive types.</p>
+<p>Signatures declare finite point and path constructors with checked endpoints. Path methods must respect both declared faces. A finite open-term boundary criterion checks each method once under canonical constructor arguments, and simultaneous substitution transports those obligations to every typed instance. Strong normalization and confluence yield a canonical normal-form comparison theorem: typed terms are joinable exactly when their unique normal forms agree. The selected canonical function uses Hilbert choice and is not an executable normalizer.</p>
+<p>The development proves weakening, term and dimension substitution, subject reduction, progress, strong normalization, Church-Rosser confluence, unique normal forms, canonicity, and empty-signature consistency. It also formalizes the boundary-computation square and dimension-capture counterexample that motivate the calculus design.</p>"""
+license = "bsd"
+note = ""
+creation_note = """
+AI assistance was used for proof engineering.
+
+
+
+
+
+
+
+
+
+
+"""
+
+[authors]
+
+[authors.ramos]
+email = "ramos_email"
+
+[authors.hulak]
+email = "hulak_email"
+
+[authors.queiroz]
+email = "queiroz_email"
+
+[contributors]
+
+[notify]
+ramos = "ramos_email"
+
+[history]
+
+[extra]
+
+[related]
+dois = [
+  "10.4230/LIPIcs.ITP.2021.12",
+  "10.23638/LMCS-16(1:10)2020",
+  "10.1145/3290314",
+  "10.23638/LMCS-17(2:8)2021",
+]
+pubs = []

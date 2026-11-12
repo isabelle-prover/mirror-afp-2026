@@ -98,6 +98,9 @@
     <loc>https://isa-afp.org/entries/Simson.html</loc>
     <lastmod>2026-08-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://isa-afp.org/entries/HoTT_HIT_Metatheory.html</loc>
+    <lastmod>2026-07-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://isa-afp.org/entries/HoTT_Object_Logic.html</loc>
     <lastmod>2026-07-24T00:00:00+00:00</lastmod>
   </url><url>
@@ -14779,6 +14782,34 @@
     <loc>https://isa-afp.org/thys/HotelKeyCards/State.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/HotelKeyCards/Trace.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_HIT_Metatheory/HIT_Canonical_Normal_Forms.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_HIT_Metatheory/HIT_Canonicity.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_HIT_Metatheory/HIT_Coherence.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_HIT_Metatheory/HIT_Confluence.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_HIT_Metatheory/HIT_Dimensions.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_HIT_Metatheory/HIT_Examples.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_HIT_Metatheory/HIT_Normalization.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_HIT_Metatheory/HIT_Open_Boundary_Check.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_HIT_Metatheory/HIT_Preservation.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_HIT_Metatheory/HIT_Reduction.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_HIT_Metatheory/HIT_Signature.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_HIT_Metatheory/HIT_Substitution.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_HIT_Metatheory/HIT_Syntax.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/HoTT_HIT_Metatheory/HIT_Typing.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/HoTT_Object_Logic/HoTT_Base.html</loc>
   </url><url>

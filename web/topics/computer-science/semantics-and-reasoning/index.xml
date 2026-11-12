@@ -12,6 +12,15 @@
     <category>Computer science/Semantics and reasoning</category>
 </item>
 <item>
+  <title>Structural Metatheory for Finitary One-Dimensional Higher Inductive Types</title>
+  <link>https://isa-afp.org/entries/HoTT_HIT_Metatheory.html</link>
+  <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+  <description>Structural Metatheory for Finitary One-Dimensional Higher Inductive Types in the AFP</description>
+    <category>Computer science/Programming languages/Type systems</category>
+    <category>Computer science/Semantics and reasoning</category>
+    <category>Logic/Proof theory</category>
+</item>
+<item>
   <title>Monadic Second-Order Logic in HOL: Deep and Shallow Embeddings with Automated Faithfulness (Isabelle/HOL dataset)</title>
   <link>https://isa-afp.org/entries/MSOinHOL.html</link>
   <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>

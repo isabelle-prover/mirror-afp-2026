@@ -724,6 +724,44 @@
   "year": "2026"
  },
  {
+  "abstract": "This entry develops the structural metatheory of a finitary, one-dimensional, nondependent calculus of higher inductive types directly in Isabelle/HOL. Its inductive syntax, raw typing relation, reduction relation, and signature environment uniformly describe ordinary inductive types and higher inductive types.\nSignatures declare finite point and path constructors with checked endpoints. Path methods must respect both declared faces. A finite open-term boundary criterion checks each method once under canonical constructor arguments, and simultaneous substitution transports those obligations to every typed instance. Strong normalization and confluence yield a canonical normal-form comparison theorem: typed terms are joinable exactly when their unique normal forms agree. The selected canonical function uses Hilbert choice and is not an executable normalizer.\nThe development proves weakening, term and dimension substitution, subject reduction, progress, strong normalization, Church-Rosser confluence, unique normal forms, canonicity, and empty-signature consistency. It also formalizes the boundary-computation square and dimension-capture counterexample that motivate the calculus design.\n",
+  "authors": [
+   "Arthur Freitas Ramos",
+   "David Barros Hulak",
+   "Ruy Jose Guerra Barretto de Queiroz"
+  ],
+  "date": "2026-07-27",
+  "link": "../entries/HoTT_HIT_Metatheory.html",
+  "permalink": "https://isa-afp.org/entries/HoTT_HIT_Metatheory.html",
+  "related": [
+   {
+    "doi": "10.4230/LIPIcs.ITP.2021.12"
+   },
+   {
+    "doi": "10.23638/LMCS-16(1:10)2020"
+   },
+   {
+    "doi": "10.1145/3290314"
+   },
+   {
+    "doi": "10.23638/LMCS-17(2:8)2021"
+   }
+  ],
+  "shortname": "HoTT_HIT_Metatheory",
+  "title": "Structural Metatheory for Finitary One-Dimensional Higher Inductive Types",
+  "topic_links": [
+   "../topics/computer-science/programming-languages/type-systems/",
+   "../topics/computer-science/semantics-and-reasoning/",
+   "../topics/logic/proof-theory/"
+  ],
+  "topics": [
+   "Computer science/Programming languages/Type systems",
+   "Computer science/Semantics and reasoning",
+   "Logic/Proof theory"
+  ],
+  "year": "2026"
+ },
+ {
   "abstract": "This entry presents an independently authored higher-order abstract syntax encoding of intensional Martin-L\u0026ouml;f type theory and a core homotopy type theory library in Isabelle/Pure. The primitive object-logic rules are explicit axioms, so the complete trusted boundary is visible in ordinary Isabelle theory files.  Derived results cover identity-path algebra, transport, homotopies, contractibility, fibers, bi-invertibility, and the identity, inverse, and composite equivalences, so type equivalence is proved reflexive, symmetric, and transitive. The main characterization proves that a map is bi-invertible if and only if all of its fibers are contractible; contractibility is also shown to transfer along an equivalence in both directions. Function extensionality and univalence are isolated in separate final theories as optional additional axioms, each stated as bi-invertibility of its canonical map.  The entry deliberately has a small, automation-free implementation surface. It does not prove normalization, canonicity, consistency, decidability of type checking, or a semantic model, and it does not include higher inductive types, cubical computation, or automatic universe inference.",
   "authors": [
    "Arthur Freitas Ramos",
