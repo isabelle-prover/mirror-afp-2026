@@ -18,6 +18,14 @@
     <category>Mathematics/Algebra</category>
 </item>
 <item>
+  <title>Type safety for Isabelle/Solidity</title>
+  <link>https://isa-afp.org/entries/Solidity_Type_Safety.html</link>
+  <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+  <description>Type safety for Isabelle/Solidity in the AFP</description>
+    <category>Computer science/Programming languages</category>
+    <category>Computer science/Programming languages/Type systems</category>
+</item>
+<item>
   <title>The Abel-Ruffini theorem and the unsolvability of the quintic</title>
   <link>https://isa-afp.org/entries/Unsolvable_Quintic.html</link>
   <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>

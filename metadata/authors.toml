@@ -8519,6 +8519,14 @@ host = [
 
 [thomson.homepages]
 
+[thornton]
+name = "Billy Thornton"
+orcid = "0000-0001-7242-5890"
+
+[thornton.emails]
+
+[thornton.homepages]
+
 [tilscher]
 name = "Sarah Tilscher"
 orcid = "0009-0009-9644-7475"

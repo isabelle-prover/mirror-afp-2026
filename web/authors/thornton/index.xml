@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Billy Thornton</title>
+    <link>https://isa-afp.org/authors/thornton/</link>
+    <description>AFP entries of Billy Thornton</description><item>
+  <title>Type safety for Isabelle/Solidity</title>
+  <link>https://isa-afp.org/entries/Solidity_Type_Safety.html</link>
+  <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+  <description>Type safety for Isabelle/Solidity in the AFP</description>
+    <category>Computer science/Programming languages</category>
+    <category>Computer science/Programming languages/Type systems</category>
+</item>
+
+  </channel>
+</rss>

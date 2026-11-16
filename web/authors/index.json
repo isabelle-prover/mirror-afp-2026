@@ -736,6 +736,14 @@
  {
   "emails": [],
   "homepages": [],
+  "id": "thornton",
+  "link": "../authors/thornton/",
+  "name": "Billy Thornton",
+  "orcid": "0000-0001-7242-5890"
+ },
+ {
+  "emails": [],
+  "homepages": [],
   "id": "ravindran",
   "link": "../authors/ravindran/",
   "name": "Binoy Ravindran"

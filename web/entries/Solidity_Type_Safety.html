@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Type safety for Isabelle/Solidity - Archive of Formal Proofs</title>
+    <meta name="description" content="Type safety for Isabelle/Solidity in the Archive of Formal Proofs">
+    <meta property="og:description" content="Type safety for Isabelle/Solidity in the Archive of Formal Proofs">
+    <meta property="og:title" content="Type safety for Isabelle/Solidity">
+    <meta property="og:url" content="https://isa-afp.org/entries/Solidity_Type_Safety.html">
+    <meta property="og:image" content="https://isa-afp.org/images/afp.png">
+    <meta property="og:type" content="article">
+  <link rel="stylesheet" type="text/css" href="../css/front.min.css">
+  <link rel="icon" href="../images/favicon.ico" type="image/icon">
+    
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [["$", "$"], ["\\(", "\\)"]]
+        },
+        processEscapes: true,
+        svg: {
+          fontCache: "global"
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="../js/mathjax/es5/tex-mml-chtml.js">
+    </script>
+
+  <script src="../js/library.js"></script>
+  <script src="../js/flexsearch.bundle.js"></script>
+  <script src="../js/search-autocomplete.js"></script>
+    <script src="../js/obfuscate.js"></script>
+    <script src="../js/entries.js"></script>
+</head>
+
+  <body class="mathjax_ignore">
+    <aside><div id="menu-toggle">
+  <input id="toggle" type="checkbox">
+  <label for="toggle">
+    <span>menu</span>
+    <img src="../images/menu.svg" alt="Menu">
+  </label>
+  <a href="../" class="logo-link">
+    <img src="../images/afp.png" alt="Logo of the Archive of Formal Proofs" class="logo">
+  </a>
+  <nav id="menu">
+    <div>
+      <a href="../" class="logo-link">
+        <img src="../images/afp.png" alt="Logo of the Archive of Formal Proofs" class="logo">
+      </a>
+      <ul>
+          <li >
+            <a href="../">Home</a>
+          </li>
+          <li >
+            <a href="../topics/">Topics</a>
+          </li>
+          <li >
+            <a href="../download/">Download</a>
+          </li>
+          <li >
+            <a href="../help/">Help</a>
+          </li>
+          <li >
+            <a href="../submission/">Submission</a>
+          </li>
+          <li >
+            <a href="../statistics/">Statistics</a>
+          </li>
+          <li >
+            <a href="../about/">About</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+    </aside>
+
+    <div class="content entries"><header>
+    <form autocomplete="off" action="../search/">
+      <div class="form-container">
+        <input id="search-input" name="s" type="search" size="31" maxlength="255" value=""
+               aria-label="Search the AFP" list="autocomplete"><button id="search-button" type="submit">
+          <img src="../images/search.svg" alt="Search">
+        </button>
+        <datalist id="autocomplete"></datalist>
+      </div>
+    </form>
+  <h1>
+    <span class='first'>T</span>ype safety for <span class='first'>I</span>sabelle/<span class='first'>S</span>olidity
+  </h1>
+  <div>
+      <p><a href="../authors/thornton/">Billy Thornton</a> and <a href="../authors/marmsoler/">Diego Marmsoler</a> <a href="http://marmsoler.com">🌐</a>
+      </p>
+      <p class="date">October 29, 2026</p>
+  </div>
+</header>
+      <div>
+  <main>
+
+    <h3>Abstract</h3>
+    <div class="abstract mathjax_process">Smart contracts are programs stored on the blockchain that are often developed in a high-level programming language, the most popular of which is Solidity. Smart contracts are used to automate financial transactions; thus, bugs can lead to large financial losses. In Solidity, programs have access to different types of stores which can store different types of data. However, data is stored without typing information therefore it is important to ensure that Solidity programs do not compromise type consistency of the data contained in these stores. With this work, we use an existing formal semantics of Solidity to verify type consistency of Solidity programs. To this end, we define type safety in the context of Solidity and prove that it is preserved by the semantics. The definition of type safety as well as its verification is formalized in the proof assistant Isabelle. To the best of our knowledge this is the first attempt to verify this type of property for Solidity.</div>
+
+    <h3>License</h3>
+    <div>
+        <a href="https://isa-afp.org/LICENSE">BSD License</a>
+    </div>
+      <h3>Note</h3>
+      <p><em>A generative AI tool (Anthropic Claude) was used strictly after the formalisation was complete for code refactoring, stylistic tidying, and improving proof formatting. Generative AI was not used to formulate definitions or construct the underlying proof arguments. All theories and proofs have been mechanically checked by Isabelle/HOL and thoroughly reviewed by the author(s), who assume full responsibility for the entirety of the submission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</em></p>
+      <h3>Topics</h3>
+      <ul>
+          <li><a href="../topics/computer-science/programming-languages/">Computer science/Programming languages</a></li>
+          <li><a href="../topics/computer-science/programming-languages/type-systems/">Computer science/Programming languages/Type systems</a></li>
+      </ul>
+      <h3>Related publications</h3>
+      <ul>
+        <li>Thornton, B., & Marmsoler, D. (2024). Type Safety for Isabelle/Solidity. Theoretical Aspects of Computing – ICTAC 2024, 313–330. <a href="https://doi.org/10.1007/978-3-031-77019-7_18">https://doi.org/10.1007/978-3-031-77019-7_18</a>
+</li>
+        <li>Thornton, B., & Marmsoler, D. (2026). Type safety for Isabelle/Solidity. Theoretical Computer Science, 1067, 115632. <a href="https://doi.org/10.1016/j.tcs.2025.115632">https://doi.org/10.1016/j.tcs.2025.115632</a>
+</li>
+      </ul>
+      <h3>Session Solidity_Type_Safety</h3>
+      <ul>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe_Support.html">TypeSafe_Support</a></li>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe_Hashing_Subs.html">TypeSafe_Hashing_Subs</a></li>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe_Base_Types.html">TypeSafe_Base_Types</a></li>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe_Memory.html">TypeSafe_Memory</a></li>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe_Storage.html">TypeSafe_Storage</a></li>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe_Def.html">TypeSafe_Def</a></li>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe_Copies.html">TypeSafe_Copies</a></li>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe_Memory_Init.html">TypeSafe_Memory_Init</a></li>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe_Mem_Sto_Comp.html">TypeSafe_Mem_Sto_Comp</a></li>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe_Memory_Copies.html">TypeSafe_Memory_Copies</a></li>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe_Environment.html">TypeSafe_Environment</a></li>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe_Decl.html">TypeSafe_Decl</a></li>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe_Expressions.html">TypeSafe_Expressions</a></li>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe_Statement_Support.html">TypeSafe_Statement_Support</a></li>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe_Assign.html">TypeSafe_Assign</a></li>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe.html">TypeSafe</a></li>
+          <li><a href="../thys/Solidity_Type_Safety/TypeSafe_Examples.html">TypeSafe_Examples</a></li>
+      </ul>
+
+    <div class="flex-wrap">
+        <div>
+          <h3>Depends on</h3>
+          <ul class="horizontal-list">
+              <li><a href="../entries/Solidity.html">Isabelle/Solidity: A deep Embedding of Solidity in Isabelle/HOL</a></li>
+          </ul>
+        </div>
+    </div>
+  </main>
+
+  <nav class="links">
+    <a class="popup-button" href="#cite-popup">Cite</a>
+    <a class="popup-button" href="#download-popup">Download</a>
+    <h4>PDFs</h4>
+    <a href="https://isa-afp.org/browser_info/current/AFP/Solidity_Type_Safety/outline.pdf">Proof outline</a>
+    <a href="https://isa-afp.org/browser_info/current/AFP/Solidity_Type_Safety/document.pdf">Proof document</a>
+    <a href="https://isa-afp.org/browser_info/current/AFP/Solidity_Type_Safety/session_graph.pdf">Dependencies</a>
+  </nav>
+
+  <div id="cite-popup" class="overlay">
+    <a class="cancel" href="#"></a>
+    <div class="popup">
+      <h2>Cite</h2>
+      <a class="close" href="#">&times;</a>
+      <div>
+        <p style="display:none;" id="bibtex-filename">Solidity_Type_Safety-AFP</p>
+        <pre id="copy-text">@article{Solidity_Type_Safety-AFP,
+  author  = {Billy Thornton and Diego Marmsoler},
+  title   = {Type safety for Isabelle/Solidity},
+  journal = {Archive of Formal Proofs},
+  month   = {October},
+  year    = {2026},
+  note    = {\url{https://isa-afp.org/entries/Solidity_Type_Safety.html},
+             Formal proof development},
+  ISSN    = {2150-914x},
+}</pre>
+        <button id="copy-bibtex">Copy</button> <a id="download-bibtex">Download</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="download-popup" class="overlay">
+    <a class="cancel" href="#"></a>
+    <div class="popup">
+      <h2>Download</h2>
+      <a class="close" href="#">&times;</a>
+      <a href="https://isa-afp.org/release/afp-Solidity_Type_Safety-current.tar.gz" download>
+        Download latest</a>
+    </div>
+  </div>
+      </div>
+    </div>
+  </body>
+</html>

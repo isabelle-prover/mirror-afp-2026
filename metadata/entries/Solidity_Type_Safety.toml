@@ -1,0 +1,49 @@
+title = "Type safety for Isabelle/Solidity"
+date = 2026-10-29
+topics = [
+  "Computer science/Programming languages",
+  "Computer science/Programming languages/Type systems",
+]
+abstract = "Smart contracts are programs stored on the blockchain that are often developed in a high-level programming language, the most popular of which is Solidity. Smart contracts are used to automate financial transactions; thus, bugs can lead to large financial losses. In Solidity, programs have access to different types of stores which can store different types of data. However, data is stored without typing information therefore it is important to ensure that Solidity programs do not compromise type consistency of the data contained in these stores. With this work, we use an existing formal semantics of Solidity to verify type consistency of Solidity programs. To this end, we define type safety in the context of Solidity and prove that it is preserved by the semantics. The definition of type safety as well as its verification is formalized in the proof assistant Isabelle. To the best of our knowledge this is the first attempt to verify this type of property for Solidity."
+license = "bsd"
+note = ""
+creation_note = """
+A generative AI tool (Anthropic Claude) was used strictly after the formalisation was complete for code refactoring, stylistic tidying, and improving proof formatting. Generative AI was not used to formulate definitions or construct the underlying proof arguments. All theories and proofs have been mechanically checked by Isabelle/HOL and thoroughly reviewed by the author(s), who assume full responsibility for the entirety of the submission.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+
+[authors]
+
+[authors.thornton]
+
+[authors.marmsoler]
+homepage = "marmsoler_homepage"
+
+[contributors]
+
+[notify]
+marmsoler = "marmsoler_email1"
+
+[history]
+
+[extra]
+
+[related]
+dois = [
+  "10.1007/978-3-031-77019-7_18",
+  "10.1016/j.tcs.2025.115632",
+]
+pubs = []

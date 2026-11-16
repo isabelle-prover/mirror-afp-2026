@@ -14,6 +14,9 @@
     <loc>https://isa-afp.org/entries/Algebra_Towers.html</loc>
     <lastmod>2026-10-30T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://isa-afp.org/entries/Solidity_Type_Safety.html</loc>
+    <lastmod>2026-10-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://isa-afp.org/entries/Unsolvable_Quintic.html</loc>
     <lastmod>2026-10-28T00:00:00+00:00</lastmod>
   </url><url>
@@ -5369,6 +5372,8 @@
     <loc>https://isa-afp.org/thys/Bicategory/Subbicategory.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/Bicategory/Tabulation.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/authors/thornton/</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/Binary_Code_Imprimitive/Binary_Code_Imprimitive.html</loc>
   </url><url>
@@ -24474,6 +24479,40 @@
     <loc>https://isa-afp.org/thys/Smooth_Manifolds/Tangent_Space.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/Smooth_Manifolds/Topological_Manifold.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe_Assign.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe_Base_Types.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe_Copies.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe_Decl.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe_Def.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe_Environment.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe_Examples.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe_Expressions.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe_Hashing_Subs.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe_Mem_Sto_Comp.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe_Memory.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe_Memory_Copies.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe_Memory_Init.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe_Statement_Support.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe_Storage.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Solidity_Type_Safety/TypeSafe_Support.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/Solidity/Accounts.html</loc>
   </url><url>

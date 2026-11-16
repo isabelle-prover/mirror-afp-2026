@@ -4,6 +4,14 @@
     <title>Computer science/Programming languages/Type systems</title>
     <link>https://isa-afp.org/topics/computer-science/programming-languages/type-systems/</link>
     <description>AFP entries in Type systems</description><item>
+  <title>Type safety for Isabelle/Solidity</title>
+  <link>https://isa-afp.org/entries/Solidity_Type_Safety.html</link>
+  <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+  <description>Type safety for Isabelle/Solidity in the AFP</description>
+    <category>Computer science/Programming languages</category>
+    <category>Computer science/Programming languages/Type systems</category>
+</item>
+<item>
   <title>Strong Normalization for Church-Style System F</title>
   <link>https://isa-afp.org/entries/System_F_Normalization.html</link>
   <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>

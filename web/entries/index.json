@@ -44,6 +44,35 @@
   "year": "2026"
  },
  {
+  "abstract": "Smart contracts are programs stored on the blockchain that are often developed in a high-level programming language, the most popular of which is Solidity. Smart contracts are used to automate financial transactions; thus, bugs can lead to large financial losses. In Solidity, programs have access to different types of stores which can store different types of data. However, data is stored without typing information therefore it is important to ensure that Solidity programs do not compromise type consistency of the data contained in these stores. With this work, we use an existing formal semantics of Solidity to verify type consistency of Solidity programs. To this end, we define type safety in the context of Solidity and prove that it is preserved by the semantics. The definition of type safety as well as its verification is formalized in the proof assistant Isabelle. To the best of our knowledge this is the first attempt to verify this type of property for Solidity.",
+  "authors": [
+   "Billy Thornton",
+   "Diego Marmsoler"
+  ],
+  "date": "2026-10-29",
+  "link": "../entries/Solidity_Type_Safety.html",
+  "permalink": "https://isa-afp.org/entries/Solidity_Type_Safety.html",
+  "related": [
+   {
+    "doi": "10.1007/978-3-031-77019-7_18"
+   },
+   {
+    "doi": "10.1016/j.tcs.2025.115632"
+   }
+  ],
+  "shortname": "Solidity_Type_Safety",
+  "title": "Type safety for Isabelle/Solidity",
+  "topic_links": [
+   "../topics/computer-science/programming-languages/",
+   "../topics/computer-science/programming-languages/type-systems/"
+  ],
+  "topics": [
+   "Computer science/Programming languages",
+   "Computer science/Programming languages/Type systems"
+  ],
+  "year": "2026"
+ },
+ {
   "abstract": "This entry proves the Abel--Ruffini theorem — a polynomial equation   solvable by radicals has a solvable Galois group — and applies it to a   concrete quintic to conclude that the general quintic is not solvable by   radicals.  We follow the corresponding mathlib formalisation.    The forward direction — solvable by radicals implies solvable Galois   group — is assembled on the session New_Algebra: cyclotomic and Kummer extensions have solvable (indeed   abelian) Galois groups, solvability is preserved by the tower correspondence,   and the normal closure of a radical tower is again a radical tower obtained by   splicing the Galois conjugates of the original tower.    For the concrete witness we study the rational quintic $\\Phi = x^5 - 4x + 2$   and show that the Galois group of its splitting field over $\\mathbb{Q}$ is   not solvable.  We prove that $\\Phi$ is irreducible over $\\mathbb{Q}$   (Eisenstein's criterion at 2) and, using the AFP   entry Sturm_Sequences, show that it has exactly three   real roots and one conjugate pair of non-real roots. Complex conjugation   therefore acts on the five roots as a transposition, while irreducibility   makes the Galois action transitive; a transitive subgroup of $S_5$ containing   a transposition is the whole of $S_5$, which is not solvable.  Combining the   two halves yields the headline result that $\\Phi$ is not solvable by radicals.",
   "authors": [
    "Lawrence C. Paulson"
