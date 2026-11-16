@@ -3616,7 +3616,9 @@ next
       from True have
         "expr (e.INT b v) env cd st g = Normal ((KValue (createSInt b v), Value (TSInt b)), g)" 
       by (simp add:Statements.solidity.expr.simps)
-      also have "createSInt b v = createSInt b ?m_def" using bits.to_nat[of b] `v \<ge> 0` unfolding createSInt_def by auto
+    also have "createSInt b v = createSInt b ?m_def" using bits.to_nat[of b] `v \<ge> 0` unfolding createSInt_def
+      by (smt (verit, ccfv_SIG) lower_bound mod_mod_trivial mod_pos_pos_trivial pos_mod_sign
+          zero_less_power)
       also from `v \<ge> 0` True have
         "Normal ((KValue (createSInt b ?m_def), Value (TSInt b)),g) = expr (eupdate (e.INT b v)) env cd st g"
       by (simp add:Statements.solidity.expr.simps)
@@ -3626,7 +3628,9 @@ next
       assume "\<not> v \<ge> 0"
       from True have
         "expr (e.INT b v) env cd st g = Normal ((KValue (createSInt b v), Value (TSInt b)), g)" by (simp add:Statements.solidity.expr.simps)
-      also have "createSInt b v = createSInt b ?m_def" using bits.to_nat[of b] `\<not> v \<ge> 0` unfolding createSInt_def by (auto split:if_splits)
+      also have "createSInt b v = createSInt b ?m_def" using bits.to_nat[of b] `\<not> v \<ge> 0` unfolding createSInt_def
+        using Read_ShowL_id createSInt_def createSInt_greater createSInt_id createSInt_less
+        by presburger
       also from `\<not> v \<ge> 0` True have
         "Normal ((KValue (createSInt b ?m_def), Value (TSInt b)),g) =expr (eupdate (e.INT b v)) env cd st g"
       by (simp add:Statements.solidity.expr.simps)
