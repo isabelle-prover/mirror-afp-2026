@@ -1,0 +1,9 @@
+chapter AFP
+
+session Solidity_Type_Safety = "Solidity" +
+  options [document = pdf, timeout = 3600]
+  theories
+    TypeSafe_Examples
+  document_files
+    "root.tex"
+    "root.bib"
