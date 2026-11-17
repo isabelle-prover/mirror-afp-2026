@@ -596,6 +596,15 @@
   "name": "Bart Kastermans"
  },
  {
+  "emails": [
+   "eyJ1c2VyIjpbImJhc2lsIiwiZnVlcmVyIl0sImhvc3QiOlsicHJvdG9ubWFpbCIsImNvbSJdfQ=="
+  ],
+  "homepages": [],
+  "id": "fuerer",
+  "link": "../authors/fuerer/",
+  "name": "Basil Fürer"
+ },
+ {
   "emails": [],
   "homepages": [
    "https://philpeople.org/profiles/ben-blumson"
@@ -1395,7 +1404,8 @@
  },
  {
   "emails": [
-   "eyJ1c2VyIjpbInRyYXl0ZWwiXSwiaG9zdCI6WyJpbiIsInR1bSIsImRlIl19"
+   "eyJ1c2VyIjpbInRyYXl0ZWwiXSwiaG9zdCI6WyJpbiIsInR1bSIsImRlIl19",
+   "eyJ1c2VyIjpbInRyYXl0ZWwiXSwiaG9zdCI6WyJkaSIsImt1IiwiZGsiXX0="
   ],
   "homepages": [
    "https://traytel.bitbucket.io/"

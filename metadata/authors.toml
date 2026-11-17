@@ -2496,6 +2496,23 @@ host = [
 
 [fuenmayor.homepages]
 
+[fuerer]
+name = "Basil Fürer"
+
+[fuerer.emails]
+
+[fuerer.emails.fuerer_email]
+user = [
+  "basil",
+  "fuerer",
+]
+host = [
+  "protonmail",
+  "com",
+]
+
+[fuerer.homepages]
+
 [furusawa]
 name = "Hitoshi Furusawa"
 

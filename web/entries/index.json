@@ -1,5 +1,48 @@
 [
  {
+  "abstract": "Two definitional packages for Isabelle/HOL that turn the source text of a language into verified values: The command \\textbf{lexer} elaborates a flex-style specification, with modes, longest match and rule priority, into an inductive lexing judgment and an executable lexer on precomputed DFA tables. The command \\textbf{grammar} elaborates an indentation-sensitive context-free grammar with semantic actions into a grammar specification, decoders from parse trees to the values of the semantic actions and an inductive relation. The related command \\textbf{parser} emits an executable LR parser for it. Both executable constants for lexing and parsing are proved sound and complete with respect to their specifications. The parser completeness, and with it the unambiguity of the grammar, follows from an LALR conflict analysis that the command carries out by evaluation.",
+  "authors": [
+   "Basil Fürer",
+   "Dmitriy Traytel"
+  ],
+  "date": "2026-11-13",
+  "link": "../entries/TIGER_Lexer_Parser.html",
+  "permalink": "https://isa-afp.org/entries/TIGER_Lexer_Parser.html",
+  "related": [
+   {
+    "doi": "10.1145/2429069.2429129"
+   },
+   {
+    "doi": "10.1145/3133906"
+   },
+   {
+    "doi": "10.1016/S0019-9958(65)90426-2"
+   },
+   {
+    "doi": "10.1145/69622.357187"
+   },
+   {
+    "doi": "10.1145/321239.321249"
+   },
+   {
+    "doi": "10.1017/S0956796808007090"
+   }
+  ],
+  "shortname": "TIGER_Lexer_Parser",
+  "title": "Tokenization, Indentation-sensitive Grammars \u0026 Executable Recognizers",
+  "topic_links": [
+   "../topics/computer-science/automata-and-formal-languages/",
+   "../topics/computer-science/programming-languages/compiling/",
+   "../topics/tools/"
+  ],
+  "topics": [
+   "Computer science/Automata and formal languages",
+   "Computer science/Programming languages/Compiling",
+   "Tools"
+  ],
+  "year": "2026"
+ },
+ {
   "abstract": "We formalize Chvátal's theorem (1977): for every tree T with n vertices, the graph Ramsey number R(K_3, T) equals 2n - 1. The upper bound is proved by induction on n, removing a leaf; the lower bound is the complete bipartite graph with two parts of size n - 1. As a corollary, every connected graph with n vertices and at most n - 1 edges, being a tree, has the same Ramsey number. Graphs, cliques and Ramsey numbers are those of the entry Ramsey_Bounds, and trees those of the entry Tree_Enumeration.",
   "authors": [
    "Carles Marín"

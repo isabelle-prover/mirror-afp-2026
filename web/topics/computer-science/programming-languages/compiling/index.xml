@@ -4,6 +4,15 @@
     <title>Computer science/Programming languages/Compiling</title>
     <link>https://isa-afp.org/topics/computer-science/programming-languages/compiling/</link>
     <description>AFP entries in Compiling</description><item>
+  <title>Tokenization, Indentation-sensitive Grammars &amp; Executable Recognizers</title>
+  <link>https://isa-afp.org/entries/TIGER_Lexer_Parser.html</link>
+  <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+  <description>Tokenization, Indentation-sensitive Grammars &amp; Executable Recognizers in the AFP</description>
+    <category>Computer science/Automata and formal languages</category>
+    <category>Computer science/Programming languages/Compiling</category>
+    <category>Tools</category>
+</item>
+<item>
   <title>LL(1) Parser Generator</title>
   <link>https://isa-afp.org/entries/LL1_Parser.html</link>
   <pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>

@@ -4,6 +4,15 @@
     <title>Tools</title>
     <link>https://isa-afp.org/topics/tools/</link>
     <description>AFP entries in Tools</description><item>
+  <title>Tokenization, Indentation-sensitive Grammars &amp; Executable Recognizers</title>
+  <link>https://isa-afp.org/entries/TIGER_Lexer_Parser.html</link>
+  <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+  <description>Tokenization, Indentation-sensitive Grammars &amp; Executable Recognizers in the AFP</description>
+    <category>Computer science/Automata and formal languages</category>
+    <category>Computer science/Programming languages/Compiling</category>
+    <category>Tools</category>
+</item>
+<item>
   <title>ML-Lex and ML-Yacc for Isabelle</title>
   <link>https://isa-afp.org/entries/Isabelle_Lex-Yacc.html</link>
   <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>

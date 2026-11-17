@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://isa-afp.org/entries/index.json</loc>
-    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://isa-afp.org/</loc>
-    <lastmod>2026-11-06T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://isa-afp.org/entries/TIGER_Lexer_Parser.html</loc>
+    <lastmod>2026-11-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://isa-afp.org/entries/Chvatal_Tree_Ramsey.html</loc>
     <lastmod>2026-11-06T00:00:00+00:00</lastmod>
@@ -5172,6 +5175,8 @@
     <loc>https://isa-afp.org/thys/Banach_Tarski/Sphere_Decomposition.html</loc>
   </url><url>
     <loc>https://isa-afp.org/authors/kastermans/</loc>
+  </url><url>
+    <loc>https://isa-afp.org/authors/fuerer/</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/BD_Security_Compositional/Composing_Security.html</loc>
   </url><url>
@@ -25475,6 +25480,124 @@
     <loc>https://isa-afp.org/thys/Three_Squares/Residues_Properties.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/Three_Squares/Three_Squares.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar_Model/Grammar_Base.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar_Model/Indentation_Sensitive.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar_Tests_Slow/Recover_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar_Tests_Slow/Repair_Code_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar_Tests_Slow/Repair_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar_Tests/Ast_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar_Tests/Compose_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar_Tests/Diag_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar_Tests/Param_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar_Tests/Parser_Check.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar_Tests/Prec_Surface_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar_Tests/Prec_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar_Tests/Reach_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar_Tests/Regression_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar_Tests/Same_Terms.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar_Tests/Span_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/Grammar_Command.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Det.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Diag.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Driver.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Fast.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Int.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Loop.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Parser.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Plain.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Prec.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Prec_Parse.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Prod.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Recover.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Restrict.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Simple.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Sparse.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Tok.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Trie.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Grammar/LR_Vec.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer_Parser/TIGER.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer_Tests/Codepoint_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer_Tests/Driver_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer_Tests/Intervals_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer_Tests/Lexer_Command_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer_Tests/Lexer_Table_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer_Tests/Pattern_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer_Tests/Tables_Tests.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer/Lexer_Check.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer/Lexer_Command.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer/TIGER_Codepoints.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer/TIGER_Driver.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer/TIGER_Gen.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer/TIGER_Intervals.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer/TIGER_Lexed.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer/TIGER_Lexer.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer/TIGER_Pattern.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer/TIGER_Pred_Algebra.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer/TIGER_Regex.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer/TIGER_Rules.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer/TIGER_Spec.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Lexer/TIGER_Tables.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/TIGER_Token/TIGER_Token.html</loc>
   </url><url>
     <loc>https://isa-afp.org/authors/jungnickel/</loc>
   </url><url>
