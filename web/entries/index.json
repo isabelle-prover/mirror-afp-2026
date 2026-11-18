@@ -161,6 +161,42 @@
   "year": "2026"
  },
  {
+  "abstract": "For a Hermitian matrix \\(A\\) and a function \\(g:\\mathbb{R}\\to\\mathbb{C}\\), we define \\(g(A)\\) as the matrix that multiplies every eigenvector of \\(A\\) with eigenvalue \\(\\lambda\\) by \\(g(\\lambda)\\). We prove that this matrix exists and is unique, and establish the algebraic properties of this functional calculus: it is linear in \\(g\\), \\(g(A)h(A)=(gh)(A)\\), \\(g(A)^*=\\overline{g}(A)\\), \\(g(A)^k=(g^k)(A)\\), and \\(g(f(A))=(g\\circ f)(A)\\) for real-valued \\(f\\). We also prove that \\(g(A)\\) is unitary when \\(|g|=1\\) on the spectrum of \\(A\\), and that \\(g(A)\\) depends only on the values of \\(g\\) on that spectrum. Special cases include the time evolution \\(e^{itA}\\), satisfying \\(e^{isA}e^{itA}=e^{i(s+t)A}\\), and the matrix inverse. We further verify the Lie–Trotter product formula with an explicit error bound, \\[ \\left\\|(e^{itH_1/r}\\cdots e^{itH_m/r})^r-e^{it(H_1+\\cdots+H_m)}\\right\\| \\le \\frac{2(mLt)^2}{r}, \\] for Hermitian matrices \\(H_j\\) with norm at most \\(L\\). Finally, we formalize Suzuki's higher-order product formulas, proving the order conditions that palindromic formulas have odd order and that Suzuki's recursion \\(S_{2k+2}\\) agrees with \\(e^{itH}\\) through degree \\(2k+2\\) in its Taylor expansion. For \\(r\\) steps of a formula with \\(|F|\\) factors and total weight \\(\\Lambda\\), we prove the error bound \\[ \\frac{r(2|F|+1)(\\Lambda|t|/r)^{2k+3}e^{\\Lambda|t|/r}}{(2k+3)!}. \\] The development uses the matrices defined in Jordan_Normal_Form, with the spectral theorem derived from the Schur decomposition in QHLProver.",
+  "authors": [
+   "Dustin Bryant"
+  ],
+  "date": "2026-10-24",
+  "link": "../entries/Hermitian_Functional_Calculus.html",
+  "permalink": "https://isa-afp.org/entries/Hermitian_Functional_Calculus.html",
+  "related": [
+   {
+    "doi": "10.1090/S0002-9939-1959-0108732-6"
+   },
+   {
+    "doi": "10.1063/1.529425"
+   },
+   {
+    "doi": "10.1126/science.273.5278.1073"
+   },
+   {
+    "doi": "10.1007/s00220-006-0150-x"
+   }
+  ],
+  "shortname": "Hermitian_Functional_Calculus",
+  "title": "The Functional Calculus of Hermitian Matrices and Product Formulas",
+  "topic_links": [
+   "../topics/mathematics/algebra/",
+   "../topics/mathematics/analysis/",
+   "../topics/computer-science/algorithms/quantum-computing/"
+  ],
+  "topics": [
+   "Mathematics/Algebra",
+   "Mathematics/Analysis",
+   "Computer science/Algorithms/Quantum computing"
+  ],
+  "year": "2026"
+ },
+ {
   "abstract": "We specify a model of the Ben-Ari concurrent garbage collector in the rely-guarantee paradigm, and verify its correctness. The aim is to show that the algorithm can be verified with rely-guarantee without the use of shared auxiliary variables. The approach is to reason that a certain property is maintained by one component for all instances of a variable, and then instantiate it to the particular instance required by the rely of the other component.",
   "authors": [
    "Roger C. Su",

@@ -49,6 +49,15 @@
     <category>Mathematics/Analysis</category>
 </item>
 <item>
+  <title>The Functional Calculus of Hermitian Matrices and Product Formulas</title>
+  <link>https://isa-afp.org/entries/Hermitian_Functional_Calculus.html</link>
+  <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+  <description>The Functional Calculus of Hermitian Matrices and Product Formulas in the AFP</description>
+    <category>Mathematics/Algebra</category>
+    <category>Mathematics/Analysis</category>
+    <category>Computer science/Algorithms/Quantum computing</category>
+</item>
+<item>
   <title>Rely-Guarantee Specification of a Concurrent Garbage Collector</title>
   <link>https://isa-afp.org/entries/RG_VDM_Garbage_Collector.html</link>
   <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>

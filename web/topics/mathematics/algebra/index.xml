@@ -18,6 +18,15 @@
     <category>Mathematics/Algebra</category>
 </item>
 <item>
+  <title>The Functional Calculus of Hermitian Matrices and Product Formulas</title>
+  <link>https://isa-afp.org/entries/Hermitian_Functional_Calculus.html</link>
+  <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+  <description>The Functional Calculus of Hermitian Matrices and Product Formulas in the AFP</description>
+    <category>Mathematics/Algebra</category>
+    <category>Mathematics/Analysis</category>
+    <category>Computer science/Algorithms/Quantum computing</category>
+</item>
+<item>
   <title>Fast Chinese Remaindering via Product Trees</title>
   <link>https://isa-afp.org/entries/CRT_Product_Tree.html</link>
   <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>

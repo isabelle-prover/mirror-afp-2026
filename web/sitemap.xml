@@ -26,6 +26,9 @@
     <loc>https://isa-afp.org/entries/Zeta_5_Irrational.html</loc>
     <lastmod>2026-10-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://isa-afp.org/entries/Hermitian_Functional_Calculus.html</loc>
+    <lastmod>2026-10-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://isa-afp.org/entries/RG_VDM_Garbage_Collector.html</loc>
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -12147,6 +12150,18 @@
     <loc>https://isa-afp.org/thys/Hermite/Hermite.html</loc>
   </url><url>
     <loc>https://isa-afp.org/thys/Hermite/Hermite_IArrays.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Hermitian_Functional_Calculus/Functional_Calculus_Overview.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Hermitian_Functional_Calculus/Hermitian_Functional_Calculus.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Hermitian_Functional_Calculus/Matrix_Sums.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Hermitian_Functional_Calculus/Suzuki_Error.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Hermitian_Functional_Calculus/Suzuki_Order.html</loc>
+  </url><url>
+    <loc>https://isa-afp.org/thys/Hermitian_Functional_Calculus/Trotter_Product_Formula.html</loc>
   </url><url>
     <loc>https://isa-afp.org/authors/guiol/</loc>
   </url><url>
