@@ -1,0 +1,12 @@
+chapter AFP
+
+session Isoperimetric = "HOL-Analysis" +
+  options [timeout = 600]
+  sessions
+    Fourier
+  theories
+    Wirtinger
+    Green_Variant
+    Isoperimetric
+  document_files
+    "root.tex"

@@ -4,6 +4,14 @@
     <title>Mathematics/Geometry</title>
     <link>https://isa-afp.org/topics/mathematics/geometry/</link>
     <description>AFP entries in Geometry</description><item>
+  <title>The Isoperimetric Inequality for Rectifiable Simple Closed Curves</title>
+  <link>https://isa-afp.org/entries/Isoperimetric.html</link>
+  <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+  <description>The Isoperimetric Inequality for Rectifiable Simple Closed Curves in the AFP</description>
+    <category>Mathematics/Geometry</category>
+    <category>Mathematics/Analysis</category>
+</item>
+<item>
   <title>Steiner&#39;s Line Theorem in Isabelle/HOL</title>
   <link>https://isa-afp.org/entries/Steiner_Line_Theorem.html</link>
   <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>

@@ -87,6 +87,27 @@
   "year": "2026"
  },
  {
+  "abstract": "This entry formalises the planar isoperimetric inequality for rectifiable simple closed curves. If a curve has length $L$, the area of its inside is at most $L^2/(4\\pi)$; equality implies that its image is a circle. The development proves a Wirtinger inequality, a special area formula for convex curves, and a convexification argument. It builds on the Fourier AFP entry and analysis material incorporated into Isabelle2026.",
+  "authors": [
+   "Lawrence C. Paulson"
+  ],
+  "date": "2026-10-29",
+  "link": "../entries/Isoperimetric.html",
+  "permalink": "https://isa-afp.org/entries/Isoperimetric.html",
+  "related": [],
+  "shortname": "Isoperimetric",
+  "title": "The Isoperimetric Inequality for Rectifiable Simple Closed Curves",
+  "topic_links": [
+   "../topics/mathematics/geometry/",
+   "../topics/mathematics/analysis/"
+  ],
+  "topics": [
+   "Mathematics/Geometry",
+   "Mathematics/Analysis"
+  ],
+  "year": "2026"
+ },
+ {
   "abstract": "Smart contracts are programs stored on the blockchain that are often developed in a high-level programming language, the most popular of which is Solidity. Smart contracts are used to automate financial transactions; thus, bugs can lead to large financial losses. In Solidity, programs have access to different types of stores which can store different types of data. However, data is stored without typing information therefore it is important to ensure that Solidity programs do not compromise type consistency of the data contained in these stores. With this work, we use an existing formal semantics of Solidity to verify type consistency of Solidity programs. To this end, we define type safety in the context of Solidity and prove that it is preserved by the semantics. The definition of type safety as well as its verification is formalized in the proof assistant Isabelle. To the best of our knowledge this is the first attempt to verify this type of property for Solidity.",
   "authors": [
    "Billy Thornton",

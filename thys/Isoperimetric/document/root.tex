@@ -1,0 +1,49 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{isabelle,isabellesym}
+\usepackage{amsmath,amssymb,url}
+
+% This should be the last package used.
+\usepackage{pdfsetup}
+
+\urlstyle{rm}
+\isabellestyle{it}
+
+\begin{document}
+
+\title{The Isoperimetric Inequality for Rectifiable Simple Closed Curves}
+\author{Lawrence C. Paulson}
+\date{}
+\maketitle
+
+\begin{abstract}
+This entry formalises the planar isoperimetric inequality for rectifiable
+simple closed curves. If a curve has length $L$, the area of its inside is
+at most $L^2/(4\pi)$; equality implies that its image is a circle. The
+development proves a Wirtinger inequality, a special area formula for
+convex curves, and a convexification argument. It builds on the
+\texttt{Fourier} AFP entry and analysis material in Isabelle2026.
+\end{abstract}
+
+\tableofcontents
+
+\section{Proof outline and provenance}
+
+The proof first establishes the inequality for convex curves. Arc-length
+reparametrisation and the Wirtinger inequality supply its analytic core;
+a special case of Green's area formula relates the resulting integral to
+the enclosed area. Convexification then reduces a general rectifiable
+simple closed curve to the convex case and accounts for equality.
+
+This development was ported from John Harrison's HOL Light formalisation
+\texttt{100/isoperimetric.ml}.\footnote{\url{https://github.com/jrh13/hol-light/blob/master/100/isoperimetric.ml}}
+The arc-length material also follows
+\texttt{Multivariate/integration.ml}.\footnote{\url{https://github.com/jrh13/hol-light/blob/master/Multivariate/integration.ml}}
+Claude assisted with the translation; the Isabelle proofs required
+substantial manual revision. There were no additional textual sources.
+The Wirtinger proof uses the AFP entry
+\emph{Fourier Series}.\footnote{\url{https://isa-afp.org/entries/Fourier.html}}
+
+\input{session}
+
+\end{document}

@@ -1,0 +1,36 @@
+title = "The Isoperimetric Inequality for Rectifiable Simple Closed Curves"
+date = 2026-10-29
+topics = [
+  "Mathematics/Geometry",
+  "Mathematics/Analysis",
+]
+abstract = """
+This entry formalises the planar isoperimetric inequality for rectifiable
+simple closed curves. If a curve has length $L$, the area of its inside is
+at most $L^2/(4\\pi)$; equality implies that its image is a circle. The
+development proves a Wirtinger inequality, a special area formula for
+convex curves, and a convexification argument. It builds on the
+Fourier AFP entry and analysis material incorporated into Isabelle2026."""
+license = "bsd"
+note = ""
+creation_note = """
+Material ported from HOL Light with substantial human assistance and also refactoring
+"""
+
+[authors]
+
+[authors.paulson]
+email = "paulson_email"
+
+[contributors]
+
+[notify]
+paulson = "paulson_email"
+
+[history]
+
+[extra]
+
+[related]
+dois = []
+pubs = []
